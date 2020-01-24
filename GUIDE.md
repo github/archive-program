@@ -94,7 +94,7 @@ Here we will provide an overview of how to unpack a particular archived reposito
 
 ### Identifying the specific reel and frames on which the repository's data is archived
 
-Each reel of film begins with a leader of empty film, and then the Zero Reference Frame, which consists of a solid black rectangle in one corner of an otherwise empty frame. The next human-readable frame is the Control Frame, with information about the reel. Following that is the Table Of Contents, which in turn includes a list of User Data Files.
+Each reel of film begins with a leader of empty film, and then the Zero Reference Frame, which consists of a solid black rectangle in one corner of an otherwise empty frame. The next human-readable frame is the Control Frame, with information about the reel. Following that is the Table of Contents, which in turn includes a list of User Data Files.
 
 Each repository on this reel is one of those User Data Files. The list includes a unique ID, a reel ID and a name for each of those files. For instance, the CPython repository might have the reel ID listed as 12345 and the name listed as python_cpython.tar.
 
