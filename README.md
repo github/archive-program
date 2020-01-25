@@ -6,3 +6,4 @@ At present we are opening the [Guide to the GitHub Code Vault](./GUIDE.md) to co
 
 To learn more about the GitHub Archive Program, visit its [web site](https://archiveprogram.github.com/) or watch [this video](https://www.youtube.com/watch?v=fzI9FNjXQ0o).
 
+To stay up to date with the GitHub Archive Program, click this [link](https://archiveprogram.github.com/#subscribe) to subscribe.
