@@ -10,11 +10,13 @@ A computer without software can do none of these things. A computer is an extrao
 
 Open source software is not a different kind of software, but a different ethos. Software is written as complex but human-readable sequences of commands, the various flavors of which are known as programming languages, because a complete unit of software is often called a program. These programs are then converted into the binary language of ones and zeros used by computers. This process is known as compiling.
 
-Because compiled software is very difficult to decipher back into its original program form, also known as its source code, it is possible for people to keep that original form secret and claim ownership over it. The open source ethos rejects that kind of secrecy and ownership. Open source software is made available to any and all who want to use it, at no cost, so they can in turn improve it, or use it to build something new and better.
+Because compiled software is very difficult to decipher back into its original program form, also known as its source code, it is possible for people to keep that original form secret and claim ownership over it. The open source ethos rejects that kind of secrecy and ownership. Open source software programs are made available to any and all who want to use it, at no cost, so they can in turn improve those programs, or use them to build something new and better.
 
-An open source software project is the collective work of a self-organizing community which may number in the thousands. The accumulation of all open source projects archived here is the work of a community of many millions. While certain individuals may have special rights within any given project, such as the ability to approve or reject suggested changes to the latest official version of its source code, no one ever owns it. Every person has every right to take and use a complete copy of any open source project at any time, at no cost or penalty. This is known as forking a project.
+An open source project is the collective work of a self-organizing community which may number in the thousands. The accumulation of all open source software projects archived here is the work of a community of many millions. While certain individuals may have special rights within any given project, such as the ability to approve or reject suggested changes to the latest official version of its source code, no one ever owns it. Every person has every right to take and use a complete copy of any open source project at any time, at no cost or penalty. This is known as forking a project.
 
 When many people work on source code at the same time, it is difficult to keep track of and integrate all of their changes. An open source project known as Git is devoted to solving this problem. It integrates a complete history of all additions and changes to a project into an entity known as a git repository. This archive is essentially an archive of such repositories.
+
+This archive has been created by a company named GitHub, which provides a service that lets people around the world store the software programs they have written, keep track of changes to these programs, and collaborate with others to improve and expand them. GitHub makes its services available for free to developers of public open source software. It has tens of millions of such users.
 
 What follows is a description of what we believe you will need to know and have in order to make best use of this software archive. If you do not know or understand some or any of this, do not despair! We have also included a guide to how to accomplish these requirements. If for any reason you cannot accomplish them yourselves, then your descendants can.
 
@@ -100,7 +102,7 @@ Each repository on this reel is one of those User Data Files. The list includes 
 
 Following the list of User Data Files is a list of Digital Data Locations. This list includes an ID, a start frame, a start byte, an end frame, and an end byte. So, using the hypothetical CPython example, the item in this list with the ID 12345 might have a start frame of 054321, a start byte of 03210321, an end frame of 054545, and an end byte of 12321232.
 
-This means, to get the CPython data: Go to frame 54321 of this reel of film. Decode all frames from the start frame, 54321, to the end frame, 54544, into binary values, by the means described below. This will give you 224 pieces of data numbered from 54321 to 54544, which will begin with a set of blank pieces with no data. Discard the first 3210320 bytes in the first non-blank piece of data. Append all the  "middle" pieces of data, in order. Finally, append the first 12321232 bytes from the last piece of data, 54544. You have now assembled the complete CPython repository, as a single compressed archive file.
+This means, to get the CPython data: Go to frame 54321 of this reel of film. Decode all frames from the start frame, 54321, to the end frame, 54545, into binary values, by the means described below. This will give you 225 pieces of data numbered from 54321 to 54545, which will begin with a set of blank pieces with no data. Discard the first 3210320 bytes in the first non-blank piece of data. Append all the  "middle" pieces of data, in order. Finally, append the first 12321232 bytes from the last piece of data, 54545. You have now assembled the complete CPython repository, as a single compressed archive file.
 
 ### Decoding from the QR codes into a binary file
 
@@ -268,7 +270,7 @@ In the case of this archive, it is likely that the dependencies for any given pr
 
 ### Open source
 
-Since running a program on a computer requires only the compiled machine code, it is possible to distribute that while keeping the source code secret. This is known as the closed source model, and, historically, was the early, crude approach to software development.
+Since running a program on a computer requires only the compiled machine code, it is possible to distribute that while keeping the source code secret. This is known as the closed source model. In the very early days of computing, source code was usually distributed along with its machine code, but subsequently, as software became a profitable industry, the closed source model became more common.
 
 It has since been learned that making source code public, for anyone to copy, branch, and improve upon, is a far more effective approach to software development. More people who can read a project's source code means more people to identify possible needs and useful new features, more people who understand the project enough to contribute to it, more people who might spot bugs and submit fixes, and more people to test and verify that new code works.
 
