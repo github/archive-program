@@ -76,7 +76,7 @@ However, Latin script is only a tiny subset of the many ways in which humans exp
 
 ASCII remains the most common format of source code. Every reel of this archive includes a guide to ASCII characters. ASCII is a subset of UTF-8, which is to say, all ASCII encodings are UTF-8 encodings as well. The guide reel additionally contains a specification of all UTF-8 characters. Almost all text files in this archive should be encoded as UTF-8.
 
-Non-text files include files meant to represent images and formatted documents. A widely used convention is for a file to end with a . character followed by a suffix which indicates its type. For instance, a file which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document File formatted document.
+Non-text files include files meant to represent images and formatted documents. A widely used convention is for a file to end with a . character followed by a suffix which indicates its type. For instance, a file which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document Format file.
 
 There is no single suffix which indicates text files. Rather, for source code, the suffix is more likely to indicate which programming or markup language the code is written in. Programming and markup languages will be described in more detail below.
 
