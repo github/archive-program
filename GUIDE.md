@@ -98,9 +98,9 @@ Here we will provide an overview of how to unpack a particular archived reposito
 
 Each reel of film begins with a leader of empty film, and then the Zero Reference Frame, which consists of a solid black rectangle in one corner of an otherwise empty frame. The next human-readable frame is the Control Frame, with information about the reel. Following that is the Table of Contents, which in turn includes a list of User Data Files.
 
-Each repository on this reel is one of those User Data Files. The list includes a unique ID, a reel ID and a name for each of those files. For instance, the CPython repository might have the reel ID listed as 12345 and the name listed as python_cpython.tar.
+Each repository on this reel is one of those User Data Files. The list includes a unique ID, a file ID and a name for each of those files. For instance, the CPython repository might have the file ID listed as 12345 and the name listed as python_cpython.tar.
 
-Following the list of User Data Files is a list of Digital Data Locations. This list includes an ID, a start frame, a start byte, an end frame, and an end byte. So, using the hypothetical CPython example, the item in this list with the ID 12345 might have a start frame of 054321, a start byte of 03210321, an end frame of 054545, and an end byte of 12321232.
+Following the list of User Data Files is a list of Digital Data Locations. This list includes the file ID, a start frame, a start byte, an end frame, and an end byte. So, using the hypothetical CPython example, the item in this list with the ID 12345 might have a start frame of 054321, a start byte of 03210321, an end frame of 054545, and an end byte of 12321232.
 
 This means, to get the CPython data: Go to frame 54321 of this reel of film. Decode all frames from the start frame, 54321, to the end frame, 54545, into binary values, by the means described below. This will give you 225 pieces of data numbered from 54321 to 54545, which will begin with a set of blank pieces with no data. Discard the first 3210320 bytes in the first non-blank piece of data. Append all the  "middle" pieces of data, in order. Finally, append the first 12321232 bytes from the last piece of data, 54545. You have now assembled the complete CPython repository, as a single compressed archive file.
 
