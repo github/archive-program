@@ -32,7 +32,9 @@ However, it's possible that you have inferior computers to ours, or even no comp
 
 The archive is so large -- roughly 24 trillion bytes -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
 
-Of course, not all of these are equally important in terms of their influence and dependencies. The Tech Tree includes an index and brief description of the most significant repositories in the archive, and lists which reel each can be found on, so that they can be accessed without having to wade through all these millions of repositories to determine which are most practically useful.
+The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance. ) The snapshot was initiated on or 02/02/2020, that is, on the second day of the month February, in the year 2020, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
+
+Of course, not all of these repositories are equally important in terms of their influence and dependencies. The Tech Tree includes an index and brief description of the most significant repositories in the archive, and lists which reel each can be found on, so that they can be accessed without having to wade through all these millions of repositories to determine which are most practically useful.
 
 ## An Overview Of The Archive
 
@@ -138,8 +140,6 @@ The details of how to decode the film frames into binary data are found in the h
 
 15. PDF source code
 
-16. [Rosetta Document?]
-
 The sixth of those items, the Data Retrieval Technology document, describes the requirements and processes to use a scanner to capture the data on a single digitally encoded frame of film and turn it into a form amenable to computer analysis. The eighth of them, the Generic 4K Frame format description, provides the technical information, including source code, required for a computer to take such a scanned image and convert it into binary data.
 
 It is theoretically possible, in principle, to convert a repository from QR-encoded data to binary data without using a computer. However, it would be enormously difficult and would probably require a sizable effort from a well-organized community over many weeks, if not months or years. Since the contents of the repositories are software intended to run on a computer, their use in the absence of a computer would be minimal at best.
@@ -174,7 +174,7 @@ Humanity has used many written characters over the millennia. The encoding used 
 
 For historical reasons, because they were the most widely used in the time and region where and when software development began, a group of characters (and concepts) known as ASCII are most efficiently encoded, at 1 byte per character. Anything which is not ASCII is encoded as 2 or more bytes per character. Most of the text files in this archive are ASCII, but a substantial number are not. Many more will be mostly ASCII with occasional non-ASCII characters.
 
-The detailed specifications of ASCII can be found in the Representation Information in every reel of the archive. [A 'Rosetta document,' containing the text of the Universal Declaration of Human Rights in almost every written language, can also be found in the Representation Information? It will definitely be in the archive, but currently uncertain whether it will be part of the Tech Tree or in the RI.] The detailed specifications of UTF-8 can be found in the guide reel.
+The detailed specifications of ASCII can be found in the Representation Information in every reel of the archive. The detailed specifications of UTF-8 can be found in the guide reel. The first data file on every reel of the archive will contain the text of the Universal Declaration of Human Rights in every available written human language. This will serve both as a translation tool and as an example of ASCII and UTF-8.
 
 ## Kinds of Files
 
@@ -202,7 +202,7 @@ There are thousands of written languages used by humanity today, and even more s
 
 The most widely used languages in the world are English and Chinese. For historical reasons, for many years most software development occurred in English-speaking nations, so for a time, English became the default language of software. Most programming languages use English words in their syntax. It is the language in which this guide to the archive was written.
 
-It is not guaranteed that the inheritors of this archive will know English, although it does seem a particularly likely language to last indefinitely. In case some guidance to other languages is helpful, we are including the more than 500 available translations of the Universal Declaration of Human Rights [as an encoded, uncompressed UTF-8 file at the beginning of every reel?], and also in visual form within the Tech Tree. This declaration is a list of the rights and freedoms of every individual human being in our era, which may never be taken away.
+It is not guaranteed that the inheritors of this archive will know English, although it does seem a particularly likely language to last indefinitely. In case some guidance to other languages is helpful, we are including the more than 500 available translations of the Universal Declaration of Human Rights as an uncompressed UTF-8 file at the beginning of every reel, and also within the Tech Tree. This declaration is a list of the rights and freedoms of every individual human being in our era, which may never be taken away.
 
 ### Programming Languages
 
@@ -266,7 +266,7 @@ If project A needs to include project B in order for A to do its work, then A is
 
 Generally, dependencies are itemized inside source code files, usually at the very top, and each time the compiler or interpreter finds a dependency, it looks for it in a set of predefined directories. Because the dependency tree for a project can be very complex, it is sometimes itemized in its entirety in a single file within a project known as a package list. For instance, Ruby projects may have a Gemfile for this purpose, and JavaScript projects may have a package.json file. This allows a kind of tool known as package management software to fetch all the dependencies for a project at once, from one or more Internet servers.
 
-In the case of this archive, it is likely that the dependencies for any given project exist elsewhere in the archive. [The archive is grouped by programming language to maximize the proximity of dependencies?] In order to find a dependency in the archive, one must first discover the correspondence between the name of the dependency in the source code or the package list; and second, use the master index in the guide reel, or, in its absence, the indexes at the front of each reel, to determine on which reel and frame(s) the repository in question can be found.
+In the case of this archive, it is likely that the dependencies for any given project exist elsewhere in the archive. In order to find a dependency in the archive, one must first discover the correspondence between the name of the dependency in the source code or the package list; and second, use the master index in the guide reel, or, in its absence, the indexes at the front of each reel, to determine on which reel and frame(s) the repository in question can be found.
 
 ### Open source
 
