@@ -28,7 +28,7 @@ Our expectation is that you didn't need the definitions of software, computer, a
 
 However, it's possible that you have inferior computers to ours, or even no computers at all. In case of that eventuality, we have prepared an uncompressed, unencoded, human-readable reel of data which we call the Tech Tree. The Tech Tree contains information about our fundamental technologies, our computers, and our software, in the hopes that, over time, you will be able to use this knowledge to recreate computers that can make use of the open source software in this archive.
 
-## What's Insidex
+## What's Inside
 
 The archive is so large -- roughly 24 trillion bytes (explained below) -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
 
