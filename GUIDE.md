@@ -30,9 +30,9 @@ However, it's possible that you have inferior computers to ours, or even no comp
 
 ## What's Inside
 
-The archive is so large -- roughly 24 trillion bytes -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
+The archive is so large -- roughly 24 trillion bytes (explained below) -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
 
-The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance. ) The snapshot was initiated on or 02/02/2020, that is, on the second day of the month February, in the year 2020, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
+The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance. ) The snapshot was initiated on or 02/02/2020, that is, on the second day of the month February, in the year 2020 of the Gregorian calendar, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
 
 Of course, not all of these repositories are equally important in terms of their influence and dependencies. The Tech Tree includes an index and brief description of the most significant repositories in the archive, and lists which reel each can be found on, so that they can be accessed without having to wade through all these millions of repositories to determine which are most practically useful.
 
@@ -162,7 +162,7 @@ At this point you have a single file known as a TAR file, for Tape Archive. A TA
 
 Each subfile within a TAR file is prefaced by a 512-byte header record, which acts like the tape in the scroll metaphor. This header record contains information about the file, such as its name and size. The end of the archive is indicated by at least two consecutive 512-byte blocks.
 
-Every repository archive file in this archive should begin with a single metadata file, which includes information about the repository, followed in turn by every file in the repository. This metadata file contains: [specify the repository metadata added to each tar file].
+Every repository archive file in this archive should begin with a single metadata file, which includes information about the repository, followed in turn by every file in the repository. This metadata file contains the repository's name, owner's handle, description, language, star count, fork count, and commit log. Other metadata -- wikis, gh-pages, issues, and pull requests -- will also be included as separate files.
 
 Because TAR files are essentially just collections of files with text records between them, if a TAR file contains all text files, it can be treated as a text file itself. If it contains a mixture, it can be treated as a text file which contains a mixture of structured, meaningful text  (the constituent text files) and incomprehensible gibberish (the constituent non-text files.)
 
@@ -236,7 +236,7 @@ There are hundreds of different programming languages, spread across many differ
 
 -   Rust, intended as a replacement for C, one which makes dangerous bugs far less likely.
 
--   PHP, a clumsy but straightforward language used for Internet servers.
+-   PHP, a straightforward language used for Internet servers.
 
 -   Lisp, a very old language with a fundamentally different, function-first approach to programming.
 
