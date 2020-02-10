@@ -14,9 +14,9 @@ Because compiled software is very difficult to decipher back into its original p
 
 An open source project is the collective work of a self-organizing community which may number in the thousands. The accumulation of all open source software projects archived here is the work of a community of many millions. While certain individuals may have special rights within any given project, such as the ability to approve or reject suggested changes to the latest official version of its source code, no one ever owns it. Every person has every right to take and use a complete copy of any open source project at any time, at no cost or penalty. This is known as forking a project.
 
-When many people work on source code at the same time, it is difficult to keep track of and integrate all of their changes. An open source project known as Git is devoted to solving this problem. It integrates a complete history of all additions and changes to a project into an entity known as a Git repository. This archive is essentially an archive of such repositories.
+When many people work on source code at the same time, it is difficult to keep track of and integrate all of their changes. An open source project known as 'Git' is devoted to solving this problem. It integrates a complete history of all additions and changes to a project into an entity known as a Git repository. This archive is essentially an archive of such repositories.
 
-This archive has been created by a company named GitHub, which provides a service that lets people around the world store the software programs they have written, keep track of changes to these programs, and collaborate with others to improve and expand them. GitHub makes its services available for free to developers of public open source software. It has tens of millions of such users.
+This archive has been created by a company named 'GitHub', which provides a service that lets people around the world store the software programs they have written, keep track of changes to these programs, and collaborate with others to improve and expand them. GitHub makes its services available for free to developers of public open source software. It has tens of millions of such users.
 
 What follows is a description of what we believe you will need to know and have in order to make best use of this software archive. If you do not know or understand some or any of this, do not despair! We have also included a guide to how to accomplish these requirements. If for any reason you cannot accomplish them yourselves, then your descendants can.
 
@@ -38,21 +38,21 @@ Of course, not all of these repositories are equally important in terms of their
 
 ## An Overview Of The Archive
 
-The archive consists of 201 reels of film: one 'guide reel' of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored as QR codes.
+The archive consists of 201 reels of film: one "guide reel" of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored as QR codes.
 
-Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either 'on' or 'off', corresponding to 1 or 0 -- and so binary data is vastly easier for computers to understand than any other.
+Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either "on" or "off", corresponding to 1 or 0 -- and so binary data is vastly easier for computers to understand than any other.
 
 The human-readable metadata stored at the beginning of each reel includes information about the film itself, a guide to the QR encoding used, a software program to decode it, and an index. The index lists the title, beginning frame number, and checksum for each file stored on that reel.
 
-A file is a single coherent data entity. A checksum is a unique value from a calculation, known as a hash function, run over the entire contents of a file, to ensure that its contents have not been damaged or corrupted; the hash function used in the archive is known as SHA-1.
+A file is a single coherent data entity. A checksum is a unique value from a calculation, known as a hash function, run over the entire contents of a file, to ensure that its contents have not been damaged or corrupted; the hash function used in the archive is known as 'SHA-1'.
 
 Each QR code consists of a field of tiny white or black squares which occupy almost the entire frame of film. We use QR codes because they are much more compact and robust than human-readable text. A QR code decodes into binary data, i.e. a series of ones and zeros.
 
-This decoding is only the first step in turning that binary data into meaningful information. It is compressed data, meaning that it has been compacted to save space, similar to how one might write '128xA' rather than writing the letter 'A' 128 times. After being decoded, it must be decompressed.
+This decoding is only the first step in turning that binary data into meaningful information. It is compressed data, meaning that it has been compacted to save space, similar to how one might write "128xA" rather than writing the letter A 128 times. After being decoded, it must be decompressed.
 
 The result after decompression is known as an archive file: a single file containing the entire contents of a single software project's repository. Most repositories include many files, so this archive file is like a book which contains many separate chapters, or a box which contains many other boxes. It is generally advantageous, though not absolutely necessary, to unpack the archive file into its component files before accessing them.
 
-Finally, each component file is its own set of binary data, that is, ones and zeros. You can make sense of data if you know its format. For instance, in the format known as "UTF-8", the most common format in the archive, the ones and zeroes are divided into groups of eight, known as bytes, the byte 01000001 represents the letter A;  the three bytes 01101001 01101110 01110100 represent the word int; and the two bytes 11000011 10000011 represent the letter Ã (A with a tilde accent on top.)
+Finally, each component file is its own set of binary data, that is, ones and zeros. One can make sense of data if you know its format. For instance, in the format known as 'UTF-8', the most common format in the archive, the ones and zeroes are divided into groups of eight, known as bytes, the byte 01000001 represents the letter A;  the three bytes 01101001 01101110 01110100 represent the word int; and the two bytes 11000011 10000011 represent the letter Ã (A with a tilde accent on top.)
 
 This data archival process, binary files packed into archive files which have been first compressed and then QR-encoded, is obviously complex compared to simply writing human-readable text. The unarchiving process you will need to go through -- QR to compressed binary; compressed to uncompressed; archive file to multiple files; text files to human-readable text -- is similarly complex. That is because this complexity allows us to store vastly more data than would otherwise be possible, in a relatively easily computer-readable way.
 
@@ -72,13 +72,13 @@ Different kinds of files have different purposes. The GitHub archive consists la
 
 Files which are not text files, such as files which represent visual images or contain compiled code, are often referred to as binary files. This is unfortunately a misleading term, as text files are ultimately 1s and 0s as well. We will refer to files which are not text files as non-text files.
 
-There are many ways to represent written human language using 1s and 0s. For historical reasons, most source code was originally written in what is known as Latin script. Latin script has 26 basic characters which are used to represent speakable words, each of which has two forms, upper case and lower case. It also has 10 digits to represent numbers. Latin script, along with various other associated symbols used to indicate structure and other concepts, is encoded into 1s and 0s in a format known as ASCII, which can represent 128 different characters and for historical reasons was dominant across most software for many years.
+There are many ways to represent written human language using 1s and 0s. For historical reasons, most source code was originally written in what is known as Latin script. Latin script has 26 basic characters which are used to represent speakable words, each of which has two forms, upper case and lower case. It also has 10 digits to represent numbers. Latin script, along with various other associated symbols used to indicate structure and other concepts, is encoded into 1s and 0s in a format known as 'ASCII', which can represent 128 different characters and for historical reasons was dominant across most software for many years.
 
-However, Latin script is only a tiny subset of the many ways in which humans express themselves in written language. To support other scripts, while also allowing all the software which had been written to use ASCII to continue working without changes (a concept known as backwards compatibility), another data format known as UTF-8 was introduced.
+However, Latin script is only a tiny subset of the many ways in which humans express themselves in written language. To support other scripts, while also allowing all the software which had been written to use ASCII to continue working without changes (a concept known as backwards compatibility), another data format known as 'UTF-8' was introduced.
 
 ASCII remains the most common format of source code. Every reel of this archive includes a guide to ASCII characters. ASCII is a subset of UTF-8, which is to say, all ASCII encodings are UTF-8 encodings as well. The guide reel additionally contains a specification of all UTF-8 characters. Almost all text files in this archive should be encoded as UTF-8.
 
-Non-text files include files meant to represent images and formatted documents. A widely used convention is for a file to end with a . character followed by a suffix which indicates its type. For instance, a file which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document Format file.
+Non-text files include files meant to represent images and formatted documents. A widely used convention is for a file to end with a '.' character followed by a suffix which indicates its type. For instance, a file which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document Format file.
 
 There is no single suffix which indicates text files. Rather, for source code, the suffix is more likely to indicate which programming or markup language the code is written in. Programming and markup languages will be described in more detail below.
 
@@ -150,9 +150,9 @@ In the event that the inheritors of this archive do not have computers, they sho
 
 In order to include as many repositories and as much data as possible, the data has been compressed. Compression means using a small amount of data to represent a larger amount, by use patterns and repetition in that larger amount. For instance, instead of writing the  character a nine times in a row, one could just write the compressed text 9a, if one was confident the reader would understand that 9a meant the uncompressed text aaaaaaaaa.
 
-Effective compression algorithms are much more complex than that, but the same principle applies. This archive uses an algorithm known as LZMA, the human-readable source code for which is included in the Representation Information at the beginning of every reel.
+Effective compression algorithms are much more complex than that, but the same principle applies. This archive uses an algorithm known as 'LZMA', the human-readable source code for which is included in the Representation Information at the beginning of every reel.
 
-LZMA combines what are known as an LZ77 algorithm and range encoding. LZ77 replaces repeated data with references to previous appearances of that data. For instance, to grossly oversimplify, if a 80-byte phrase appears twice, 400 bytes apart, the second time, the algorithm essentially compacts the data by saying "repeat 80 bytes from 400 bytes ago." Range encoding essentially converts an entire message into a single very long number, which in turn can be encoded.
+LZMA combines what are known as an 'LZ77' algorithm and "range encoding". LZ77 replaces repeated data with references to previous appearances of that data. For instance, to grossly oversimplify, if a 80-byte phrase appears twice, 400 bytes apart, the second time, the algorithm essentially compacts the data by saying "repeat 80 bytes from 400 bytes ago". Range encoding essentially converts an entire message into a single very long number, which in turn can be encoded.
 
 The specific steps of the algorithm to be used to decompress the data are described by the LZMA source code contained in the Representation Information. While it's theoretically possible to decompress by hand, again, this would be an extremely time-intensive and labor-intensive process. In practice, a working computer would be called for.
 
@@ -170,15 +170,15 @@ Specific details of TAR files, and the software to encode and decode them, can b
 
 ### Converting each individual file into written characters
 
-Humanity has used many written characters over the millennia. The encoding used to represent these characters as 1s and 0s within this archive is known as UTF-8. A single UTF-8 character, i.e. a single written symbol, can occupy anywhere from 1 to 4 bytes of binary data.
+Humanity has used many written characters over the millennia. The encoding used to represent these characters as 1s and 0s within this archive is known as 'UTF-8'. A single UTF-8 character, i.e. a single written symbol, can occupy anywhere from 1 to 4 bytes of binary data.
 
-For historical reasons, because they were the most widely used in the time and region where and when software development began, a group of characters (and concepts) known as ASCII are most efficiently encoded, at 1 byte per character. Anything which is not ASCII is encoded as 2 or more bytes per character. Most of the text files in this archive are ASCII, but a substantial number are not. Many more will be mostly ASCII with occasional non-ASCII characters.
+For historical reasons, because they were the most widely used in the time and region where and when software development began, a group of characters (and concepts) known as 'ASCII' are most efficiently encoded, at 1 byte per character. Anything which is not ASCII is encoded as 2 or more bytes per character. Most of the text files in this archive are ASCII, but a substantial number are not. Many more will be mostly ASCII with occasional non-ASCII characters.
 
 The detailed specifications of ASCII can be found in the Representation Information in every reel of the archive. The detailed specifications of UTF-8 can be found in the guide reel. The first data file on every reel of the archive will contain the text of the Universal Declaration of Human Rights in every available written human language. This will serve both as a translation tool and as an example of ASCII and UTF-8.
 
 ## Kinds of Files
 
-There are many different kinds of text files, created for different reasons. The primary kind here, the reason this archive exists, is source code. Source code is very dense, extremely structured text, in which symbols like { and ; have great importance.
+There are many different kinds of text files, created for different reasons. The primary kind here, the reason this archive exists, is source code. Source code is very dense, extremely structured text, in which symbols like '{' and ';' have great importance.
 
 The key thing about source code is that it is written to be read by compilers. Since compilers are software, another way of phrasing this is that source code is written to be read by computers. Good code is also written so that other humans, if they are skilled and educated in the field of software, can understand it; but it is only correct if a compiler can understand it.
 
@@ -218,11 +218,11 @@ There are hundreds of different programming languages, spread across many differ
 
 -   C++, a more complex, abstract, and powerful evolution of C.
 
--   C#, a further evolution compiled not into binary machine code but an interpreted 'runtime.'
+-   C#, a further evolution compiled not into binary machine code but an interpreted "runtime".
 
 -   Java, which is similar to (but predates) C#, is perhaps today's most widely used language.
 
--   JavaScript, quite unlike Java despite the similarity in name, and also known as ECMAScript, is a language initially used wholly within a web browser, i.e. a program which fetched, interpreted, and displayed data from a remote computer known as an Internet server; today, though, it is widely used on those servers as well.
+-   JavaScript, quite unlike Java despite the similarity in name, and also known as 'ECMAScript', is a language initially used wholly within a web browser, i.e. a program which fetched, interpreted, and displayed data from a remote computer known as an Internet server; today, though, it is widely used on those servers as well.
 
 -   TypeScript, a form of JavaScript with stricter rules so that errors, also known as bugs, are less likely to find their way into programs.
 
