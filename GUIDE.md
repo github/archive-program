@@ -164,7 +164,7 @@ Other metadata, such as wikis, gh-pages, issues, and pull requests, may also be 
 
 Specific details of TAR files, and the software to encode and decode them, can be found in the Representation Information in every reel of the archive.
 
-### Unzipping the binary file into a longer, uncompressed archive file
+### Unzipping compressed files into readable, uncompressed files
 
 In order to include as many repositories and as much data as possible, most of the data has been compressed. Compression means using a small amount of data to represent a larger amount, by use patterns and repetition in that larger amount. For instance, instead of writing the  character a nine times in a row, one could just write the compressed text 9a, if one was confident the reader would understand that 9a meant the uncompressed text aaaaaaaaa.
 
