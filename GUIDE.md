@@ -134,11 +134,11 @@ The details of how to decode the film frames into binary data are found in the h
 
 12. C programming language specification
 
-13. LZMA / XZ source code
+13. TAR archive file source code
 
-14. TAR archive file source code
+14. PDF source code
 
-15. PDF source code
+15. XZ file format specification
 
 The sixth of those items, the Data Retrieval Technology document, describes the requirements and processes to use a scanner to capture the data on a single digitally encoded frame of film and turn it into a form amenable to computer analysis. The eighth of them, the Generic 4K Frame format description, provides the technical information, including source code, required for a computer to take such a scanned image and convert it into binary data.
 
@@ -146,27 +146,33 @@ It is theoretically possible, in principle, to convert a repository from QR-enco
 
 In the event that the inheritors of this archive do not have computers, they should keep the archive whole and safe until they do. One purpose of the human-readable Tech Tree is to help accelerate the development of technologies and computers in case of this eventuality. (Its other purpose is to codify our technology and its development for future historians.)
 
-### Unzipping the binary file into a longer, uncompressed archive file
-
-In order to include as many repositories and as much data as possible, the data has been compressed. Compression means using a small amount of data to represent a larger amount, by use patterns and repetition in that larger amount. For instance, instead of writing the  character a nine times in a row, one could just write the compressed text 9a, if one was confident the reader would understand that 9a meant the uncompressed text aaaaaaaaa.
-
-Effective compression algorithms are much more complex than that, but the same principle applies. This archive uses an algorithm known as 'LZMA', the human-readable source code for which is included in the Representation Information at the beginning of every reel.
-
-LZMA combines what are known as an 'LZ77' algorithm and "range encoding". LZ77 replaces repeated data with references to previous appearances of that data. For instance, to grossly oversimplify, if a 80-byte phrase appears twice, 400 bytes apart, the second time, the algorithm essentially compacts the data by saying "repeat 80 bytes from 400 bytes ago". Range encoding essentially converts an entire message into a single very long number, which in turn can be encoded.
-
-The specific steps of the algorithm to be used to decompress the data are described by the LZMA source code contained in the Representation Information. While it's theoretically possible to decompress by hand, again, this would be an extremely time-intensive and labor-intensive process. In practice, a working computer would be called for.
-
 ### Unpacking the archive file into the separate subfiles it contains
 
-At this point you have a single file known as a TAR file, for Tape Archive. A TAR file is essentially composed by grouping a number of files together by connecting the end of one to the beginning of the next, like taping individual pieces of paper together into a single scroll. A TAR file can include any number of files, of any size, divided into any number of directories and subdirectories.
+The binary file for each repository is in a format known as TAR, for Tape Archive. A TAR file is essentially composed by grouping a number of files together by connecting the end of one to the beginning of the next, like taping individual pieces of paper together into a single scroll. A TAR file can include any number of files, of any size, divided into any number of directories and subdirectories.
 
 Each subfile within a TAR file is prefaced by a 512-byte header record, which acts like the tape in the scroll metaphor. This header record contains information about the file, such as its name and size. The end of the archive is indicated by at least two consecutive 512-byte blocks.
 
-Every repository archive file in this archive should begin with a single metadata file, which includes information about the repository, followed in turn by every file in the repository. This metadata file contains the repository's name, owner's handle, description, language, star count, fork count, and commit log. Other metadata -- wikis, gh-pages, issues, and pull requests -- will also be included as separate files.
-
 Because TAR files are essentially just collections of files with text records between them, if a TAR file contains all text files, it can be treated as a text file itself. If it contains a mixture, it can be treated as a text file which contains a mixture of structured, meaningful text  (the constituent text files) and incomprehensible gibberish (the constituent non-text files.)
 
+It is possible to nest TAR files within TAR files, one container inside another, and this is how most of our archived data is stored. For any given repository, the outer TAR file will contain at least:
+
+* a single uncompressed metadata file called META, which includes the repository's name, owner's handle, description, language, star count, and fork count
+* a compressed (see below) file named COMMITS, which includes log of the changes made to the repository over time
+* a file named repo.tar.xz, a compressed TAR file which contains the actual repository contents
+
+Other metadata, such as wikis, gh-pages, issues, and pull requests, may also be included as separate compressed files.
+
 Specific details of TAR files, and the software to encode and decode them, can be found in the Representation Information in every reel of the archive.
+
+### Unzipping compressed files into readable, uncompressed files
+
+In order to include as many repositories and as much data as possible, most of the data has been compressed. Compression means using a small amount of data to represent a larger amount, by use patterns and repetition in that larger amount. For instance, instead of writing the  character a nine times in a row, one could just write the compressed text 9a, if one was confident the reader would understand that 9a meant the uncompressed text aaaaaaaaa.
+
+Effective compression algorithms are much more complex than that, but the same principle applies. This archive uses a compression program known as 'XZ', which in turn uses an algorithm known as 'LZMA'. The second data file in every reel contains the source code and documentation for XZ in a single uncompressed TAR archive file, described below. (The first data file contains the Universal Declaration of Human Rights in every available written human language.)
+
+LZMA combines what are known as an 'LZ77' algorithm and "range encoding". LZ77 replaces repeated data with references to previous appearances of that data. For instance, to grossly oversimplify, if a 80-byte phrase appears twice, 400 bytes apart, the second time, the algorithm essentially compacts the data by saying "repeat 80 bytes from 400 bytes ago". Range encoding essentially converts an entire message into a single very long number, which in turn can be encoded.
+
+The specific steps of the algorithm to be used to decompress the data are described by the XZ source code contained in the second data file in every reel. While it's theoretically possible to decompress by hand, again, this would be an extraordinarily time- and labor-intensive process. In practice, a working computer would be called for.
 
 ### Converting each individual file into written characters
 
