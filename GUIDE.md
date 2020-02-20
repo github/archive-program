@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This archive, the GitHub Code Vault, was established and preserved by the GitHub Archive Program, whose mission is to preserve open source software for future generations. You may be reading this one year from now, or one thousand, but either way, we hope its contents, and perhaps the very concept of open source, are useful to you.
+This archive, the GitHub Code Vault, was established by the GitHub Archive Program, whose mission is to preserve open source software for future generations. You may be reading this one year from now, or one thousand, but either way, we hope its contents, and perhaps the very concept of open source, are useful to you.
 
 This is primarily an archive of software. Software is a series of commands used to control the actions of a computer. A computer is a device which can automatically perform mathematical functions so much faster than a human mind that it has powers far beyond us. Our computers are used to help explore the secrets of the universe, to connect all of humanity in an omnipresent web of information, to manipulate signals fast enough to transmit sounds and project detailed moving images onto electrical screens, and to control enormously powerful machinery which far exceeds both the capacity and precision of human labor.
 
 A computer without software can do none of these things. A computer is an extraordinary and marvelous thing, but without software, all its power is useless. The purpose of this archive is to pass what we know about software on to you.
 
-Open source software is not a different kind of software, but a different ethos. Software is written as complex but human-readable sequences of commands, the various flavors of which are known as programming languages, because a complete unit of software is often called a program. These programs are then converted into the binary language of ones and zeros used by computers. This process is known as compiling.
+Software is written as complex but human-readable sequences of commands, the various flavors of which are known as programming languages, because a complete unit of software is often called a program. These programs are then converted into the binary language of ones and zeros used by computers. This process is known as compiling.
 
-Because compiled software is very difficult to decipher back into its original program form, also known as its source code, it is possible for people to keep that original form secret and claim ownership over it. The open source ethos rejects that kind of secrecy and ownership. Open source software programs are made available to any and all who want to use it, at no cost, so they can in turn improve those programs, or use them to build something new and better.
+Because compiled software is very difficult to decipher back into its original program form, also known as its source code, it is possible for people to keep that original form secret and claim ownership over it. Open source software is not a different kind of software, but a different ethos. The open source ethos rejects secrecy and ownership. Open source software programs are made available to any and all who want to use it, at no cost, so they can in turn improve those programs, or use them to build something new and better.
 
 An open source project is the collective work of a self-organizing community which may number in the thousands. The accumulation of all open source software projects archived here is the work of a community of many millions. While certain individuals may have special rights within any given project, such as the ability to approve or reject suggested changes to the latest official version of its source code, no one ever owns it. Every person has every right to take and use a complete copy of any open source project at any time, at no cost or penalty. This is known as forking a project.
 
@@ -22,9 +22,9 @@ What follows is a description of what we believe you will need to know and have 
 
 ## What You Need To Use The Archive
 
-In principle, all you need to access the contents of this archive is a light source and some kind of magnifier. However, most (though not all) of its data has been packed very tightly onto these 200 film reels in an encoded and compressed form. Reading, decoding, and uncompressing this data will require considerable computation itself. In theory it could be done without computers, but it would be very tedious and difficult.
+In principle, all you need to access the contents of this archive is a source of illumination and some kind of magnifier. However, most (though not all) of its data has been packed very tightly onto film reels in an encoded and compressed form. Reading, decoding, and uncompressing this data will require considerable computation itself. In theory it could be done without computers, but it would be very tedious and difficult.
 
-Our expectation is that you didn't need the definitions of software, computer, and other terms. We imagine you have computers of your own, probably vastly more advanced than ours, and possibly fundamentally differently architected. Once you understand the overview and guide below you will easily be able to access all of the data.
+Our expectation is that you didn't need our definitions of software, computer, and other terms. We imagine you have computers of your own, probably vastly more advanced than ours, and possibly fundamentally differently architected. Once you understand the overview and guide below you will easily be able to access all of the data.
 
 However, it's possible that you have inferior computers to ours, or even no computers at all. In case of that eventuality, we have prepared an uncompressed, unencoded, human-readable reel of data which we call the Tech Tree. The Tech Tree contains information about our fundamental technologies, our computers, and our software, in the hopes that, over time, you will be able to use this knowledge to recreate computers that can make use of the open source software in this archive.
 
@@ -32,13 +32,13 @@ However, it's possible that you have inferior computers to ours, or even no comp
 
 The archive is so large -- roughly 24 trillion bytes (explained below) -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
 
-The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance. ) The snapshot was initiated on 02/02/2020, that is, on the second day of the month February, in the year 2020 of the Gregorian calendar, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
+The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance to them.) The snapshot was initiated on 02/02/2020, that is, on the second day of the month February, in the year 2020 of the Gregorian calendar, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
 
 Of course, not all of these repositories are equally important in terms of their influence and dependencies. The Tech Tree includes an index and brief description of the most significant repositories in the archive, and lists which reel each can be found on, so that they can be accessed without having to wade through all these millions of repositories to determine which are most practically useful.
 
 ## An Overview Of The Archive
 
-The archive consists of 201 reels of film: one "guide reel" of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored as QR codes.
+The archive consists of 201 reels of film: one "guide reel" of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored in a visual form known as QR codes.
 
 Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either "on" or "off", corresponding to 1 or 0 -- and so binary data is vastly easier for computers to understand than any other.
 
@@ -66,7 +66,7 @@ A file is a collection of data grouped together into a coherent entity with a si
 
 This structure is preferred because files organized into groups are much easier to work with than a single collection of files. The identifier of a particular file within the outer directory consists of the names of all of its enclosing directories, starting with the root, followed by its own individual name, with a / character between every name. For instance, a file named README.md in the root directory would be identified as /README.md and a file identified as /public/www/index.html would be the file index.html in the 'www' directory inside the 'public' directory inside the root directory.
 
-Each repository in turn has two names, separated by a divider, which in the archive is an _ or underscore character. (Historically it has been a / or slash, but that is also used to indicate a directory, so we use _ for clarity.) The first name is the GitHub account which owns that repository; the second is the name of the individual repository. The combination of repository and file identifiers can be used to uniquely identify an individual file in the archive. For instance, the file 'package.json' in the directory 'web' in the repository 'ykarma' owned by the GitHub user 'rezendi' could be uniquely identified as /web/package.json in rezendi_ykarma in the archive.
+Each repository in turn has two names, separated by a divider, which in the archive is an _ or underscore character. (Historically it has been a / or slash, but that is also used to indicate a directory, so we use _ for clarity.) The first name is the GitHub account which owns that repository; the second is the name of the individual repository. The combination of repository and file identifiers can be used to uniquely identify an individual file in the archive. For instance, the file 'package.json' in the directory 'web' in the repository 'ykarma' within the GitHub account 'rezendi' could be uniquely identified as /web/package.json in rezendi_ykarma in the archive.
 
 Different kinds of files have different purposes. The GitHub archive consists largely of text files, meaning files whose data is meant to represent written language. Most software is written in text files containing highly structured text known as source code. A special program known as a compiler converts that human-readable source code into computer-readable instructions known as compiled code or machine code.
 
@@ -100,7 +100,7 @@ Here we will provide an overview of how to unpack a particular archived reposito
 
 Each reel of film begins with a leader of empty film, and then the Zero Reference Frame, which consists of a solid black rectangle in one corner of an otherwise empty frame. The next human-readable frame is the Control Frame, with information about the reel. Following that is the Table of Contents, which in turn includes a list of User Data Files.
 
-Each repository on this reel is one of those User Data Files. The list includes a unique ID, a file ID and a name for each of those files. For instance, the CPython repository might have the file ID listed as 12345 and the name listed as python_cpython.tar.
+Each repository on this reel is one of those User Data Files. The list includes a unique ID, a file ID and a name for each of those files. For instance, the Python account's CPython repository might have the file ID listed as 12345, and the name listed as python_cpython.tar.
 
 Following the list of User Data Files is a list of Digital Data Locations. This list includes the file ID, a start frame, a start byte, an end frame, and an end byte. So, using the hypothetical CPython example, the item in this list with the ID 12345 might have a start frame of 054321, a start byte of 03210321, an end frame of 054545, and an end byte of 12321232.
 
@@ -126,7 +126,7 @@ The details of how to decode the film frames into binary data are found in the h
 
 8.  Generic 4K Frame format description
 
-9.  Unboxing library description
+9.  Unboxing library description (for the QR codes)
 
 10. Unboxing library source code
 
@@ -138,7 +138,7 @@ The details of how to decode the film frames into binary data are found in the h
 
 14. PDF source code
 
-15. XZ file format specification
+15. XZ file format specification (for compression / decompression, described below)
 
 The sixth of those items, the Data Retrieval Technology document, describes the requirements and processes to use a scanner to capture the data on a single digitally encoded frame of film and turn it into a form amenable to computer analysis. The eighth of them, the Generic 4K Frame format description, provides the technical information, including source code, required for a computer to take such a scanned image and convert it into binary data.
 
@@ -156,7 +156,7 @@ Because TAR files are essentially just collections of files with text records be
 
 It is possible to nest TAR files within TAR files, one container inside another, and this is how most of our archived data is stored. For any given repository, the outer TAR file will contain at least:
 
-* a single uncompressed metadata file called META, which includes the repository's name, owner's handle, description, language, star count, and fork count
+* a single uncompressed metadata file called META, which includes the repository name, account name, description, language, star count, and fork count
 * a compressed (see below) file named COMMITS, which includes log of the changes made to the repository over time
 * a file named repo.tar.xz, a compressed TAR file which contains the actual repository contents
 
@@ -206,9 +206,9 @@ A brief overview of the most common forms of non-text files may also be useful. 
 
 There are thousands of written languages used by humanity today, and even more spoken languages. Most of those are used only by relatively small populations, but there are at least twenty languages used as a first or second language by at least 60 million people.
 
-The most widely used languages in the world are English and Chinese. For historical reasons, for many years most software development occurred in English-speaking nations, so for a time, English became the default language of software. Most programming languages use English words in their syntax. It is the language in which this guide to the archive was written.
+The most widely used languages in the world are English and Chinese. For historical reasons, for many years most software development occurred in English-speaking nations, so for a time, English became the default language of software. Most programming languages use English words in their syntax. It is the language in which this guide to the archive was first written.
 
-It is not guaranteed that the inheritors of this archive will know English, although it does seem a particularly likely language to last indefinitely. In case some guidance to other languages is helpful, we are including the more than 500 available translations of the Universal Declaration of Human Rights as an uncompressed UTF-8 file at the beginning of every reel, and also within the Tech Tree. This declaration is a list of the rights and freedoms of every individual human being in our era, which may never be taken away.
+It is not guaranteed that the inheritors of this archive will know English, although it does seem a particularly likely language to last indefinitely. In case some guidance to other languages is helpful, we are including the more than 500 available translations of the Universal Declaration of Human Rights as an uncompressed UTF-8 file at the beginning of every reel, and also within the Tech Tree. This declaration is a list of the rights and freedoms of every individual human being in our era, which must never be taken away.
 
 ### Programming Languages
 
@@ -256,7 +256,7 @@ There are hundreds of different programming languages, spread across many differ
 
 The process of taking a single, simple source code file and converting it into electrical impulses within a computer is extremely complex. We deal with this complexity using layers of abstraction. An abstraction known as an instruction set allows the machine code output from a single compiler to be used on many different kinds of computers. An author of source code does not usually need to know or care what kind of computer, or even what instruction set, will be used to run that code; this is abstracted out by the compiler.
 
-Modern software is, in turn, much more complex than a single author working on a single program for a single computer. It consists of many authors working on many files within a single project, simultaneously. Furthermore, every project depends on other, separate, self-contained projects as tools and/or components, while these projects are themselves actively being worked on, and are in turn dependent on yet other projects. Making all these moving parts work together elegantly and efficiently is the challenge of modern software development.
+Modern software is, in turn, much more complex than a single author working on a single program for a single computer. It consists of many authors working on many files within a single project, simultaneously, often using multiple programming languages. Furthermore, every project depends on other, separate, self-contained projects as tools and/or components, while these projects are themselves actively being worked on, and are in turn dependent on yet other projects. Making all these moving parts work together elegantly and efficiently is the challenge of modern software development.
 
 When multiple source code authors, also known as software developers, work on a single project, each has their own computer, and a copy of the entire project on their computer. If they each make changes, then each has a different version of the same project. The process of reconciling multiple versions of a project is known as version control. It is managed by version control software; in this archive, by software called Git, after which GitHub itself is named. Every repository in this archive is a Git repository.
 
@@ -272,7 +272,7 @@ If project A needs to include project B in order for A to do its work, then A is
 
 Generally, dependencies are itemized inside source code files, usually at the very top, and each time the compiler or interpreter finds a dependency, it looks for it in a set of predefined directories. Because the dependency tree for a project can be very complex, it is sometimes itemized in its entirety in a single file within a project known as a package list. For instance, Ruby projects may have a Gemfile for this purpose, and JavaScript projects may have a package.json file. This allows a kind of tool known as package management software to fetch all the dependencies for a project at once, from one or more Internet servers.
 
-In the case of this archive, it is likely that the dependencies for any given project exist elsewhere in the archive. In order to find a dependency in the archive, one must first discover the correspondence between the name of the dependency in the source code or the package list; and second, use the master index in the guide reel, or, in its absence, the indexes at the front of each reel, to determine on which reel and frame(s) the repository in question can be found.
+In the case of this archive, it is likely that the dependencies for any given project exist elsewhere in the archive. In order to find a dependency in the archive, one must first discover the name of the dependency in the source code or the package list, the exact details of which vary by language and framework, and then use the master index in the guide reel, or, in its absence, the indexes at the front of each reel, to determine on which reel and frame(s) the repository in question can be found.
 
 ### Open source
 
