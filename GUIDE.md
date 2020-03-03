@@ -78,7 +78,7 @@ However, Latin script is only a tiny subset of the many ways in which humans exp
 
 ASCII remains the most common format of source code. Every reel of this archive includes a guide to ASCII characters. ASCII is a subset of UTF-8, which is to say, all ASCII encodings are UTF-8 encodings as well. The guide reel additionally contains a specification of all UTF-8 characters. Almost all text files in this archive should be encoded as UTF-8.
 
-Non-text files include files meant to represent images and formatted documents. A widely used convention is for a file to end with a '.' character followed by a suffix which indicates its type. For instance, a file which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document Format file.
+Non-text files include files meant to represent images and formatted documents. A widely used convention is for file names to end with a '.' character followed by a suffix which indicates the file type. For instance, a file name which ends with .jpg is likely a JPEG image file; one which ends with .PNG is likely a Portable Network Graphic image file; and one which ends with .pdf a Portable Document Format file.
 
 There is no single suffix which indicates text files. Rather, for source code, the suffix is more likely to indicate which programming or markup language the code is written in. Programming and markup languages will be described in more detail below.
 
@@ -218,7 +218,7 @@ A programming language is a set of predefined elements, most of which are words,
 
 Programs are generally divided into discrete steps, known as statements, which in turn are grouped together into collections known as functions. An entire program may be contained in a single file, or may be spread across thousands.
 
-There are hundreds of different programming languages, spread across many different forms, approaches, and philosophies. Some are compiled into separate binary files, which are then executed; some, known as "interpreted" languages, are effectively compiled and run all at once, with no interim stage. Most modern languages include libraries of pre-written functions, and such libraries can be very voluminous and elaborate. Some of today's most popular programming languages include:
+There are hundreds of different programming languages, spread across many different forms, approaches, and philosophies. Some are compiled into separate binary files, which are then executed; some, known as "interpreted" languages, are effectively compiled and run all at once, with no interim stage. Most modern programming languages include libraries of pre-written functions, and such libraries can be very voluminous and elaborate. Some of today's most popular programming languages include:
 
 -   C, one of the oldest and fastest, most universal, and most powerful languages, simple in some ways but quite limited in others, and not always intuitive, easy to read, or easy to learn.
 
