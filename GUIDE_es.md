@@ -8,7 +8,7 @@ Se trata fundamentalmente de un archivo de software. El software son una serie d
 
 Un ordenador sin software no puede hacer ninguna de estas cosas. Un ordenador es algo extraordinario y maravilloso, pero sin software, toda su potencia no sirve para nada. El objetivo de este Archivo es transmitirte lo que sabemos sobre el software.
 
-El software se escribe en secuencias de comandos complejas pero legibles para el hombre, cuyos diversos tipos se conocen como lenguajes de programación, ya que una unidad completa de software a menudo se denomina programa. Estos programas de alto nivel luego se traducen al lenguaje binario de unos y ceros utilizado por los ordenadores. Este proceso se llama compilación.
+El software se escribe en secuencias de comandos complejas pero legibles para el hombre, cuyos diversos tipos se conocen como lenguajes de programación, ya que una unidad completa de software a menudo se denomina programa. Estos programas de alto nivel luego son traducidos a lenguaje binario de unos y ceros utilizado por los ordenadores. Este proceso se llama compilación.
 
 Debido a que es muy difícil descifrar el software compilado a su forma original de programa, también conocido como código fuente, la gente puede mantener esa forma original en secreto y reclamar su propiedad. El software de código abierto no es un tipo de software diferente, sino que tiene unos valores distintos. La filosofía del código abierto rechaza el secretismo y la propiedad. Los programas de software de código abierto se ponen a disposición de todas las personas que deseen usarlos, sin coste alguno, para que a su vez puedan mejorar esos programas o utilizarlos para crear algo nuevo y mejor.
 
