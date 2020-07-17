@@ -1,4 +1,4 @@
-# Guía de la GitHub Code Vault (bóveda de código de GitHub)
+# Guía de la GitHub Code Vault (Cápsula de código de GitHub)
 
 ## Introducción
 
@@ -8,7 +8,7 @@ Se trata fundamentalmente de un archivo de software. El software son una serie d
 
 Un ordenador sin software no puede hacer ninguna de estas cosas. Un ordenador es algo extraordinario y maravilloso, pero sin software, toda su potencia no sirve para nada. El objetivo de este Archivo es transmitirte lo que sabemos sobre el software.
 
-El software se escribe en secuencias de comandos complejas pero legibles para el hombre, cuyos diversos tipos se conocen como lenguajes de programación, ya que una unidad completa de software a menudo se denomina programa. Estos programas luego se pasan al lenguaje binario de unos y ceros utilizado por los ordenadores. Este proceso se llama compilación.
+El software se escribe en secuencias de comandos complejas pero legibles para el hombre, cuyos diversos tipos se conocen como lenguajes de programación, ya que una unidad completa de software a menudo se denomina programa. Estos programas de alto nivel luego se traducen al lenguaje binario de unos y ceros utilizado por los ordenadores. Este proceso se llama compilación.
 
 Debido a que es muy difícil descifrar el software compilado a su forma original de programa, también conocido como código fuente, la gente puede mantener esa forma original en secreto y reclamar su propiedad. El software de código abierto no es un tipo de software diferente, sino que tiene unos valores distintos. La filosofía del código abierto rechaza el secretismo y la propiedad. Los programas de software de código abierto se ponen a disposición de todas las personas que deseen usarlos, sin coste alguno, para que a su vez puedan mejorar esos programas o utilizarlos para crear algo nuevo y mejor.
 
@@ -190,7 +190,7 @@ La clave del código fuente es que está escrito para ser leído por los compila
 
 Ese compilador, a su vez, a través de complicadas secuencias descritas en el Tech Tree, convertirá el código fuente en las secuencias de unos y ceros que harán que el ordenador realice las funciones y actividades descritas por el código. Para poner un ejemplo muy simple, la línea de código
 
-_para (int i=0; i<5; i++) { }_
+`para (int i=0; i<5; i++) { }`
 
 será convertida por el compilador en una serie de instrucciones binarias que se suministran al ordenador, lo que hará que una pequeña parte del mismo, llamada registro, establezca su valor en 0 y posteriormente incremente ese valor a 1, 2, 3 y luego a 4. (Esto no pretende ser un ejemplo de código útil; es solo una ilustración del proceso de múltiples capas que convierte el código fuente en software funcional).
 
