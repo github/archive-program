@@ -198,7 +198,7 @@ Other kinds of text files, such as JSON, XML, and HTML, are used to store data (
 
 Most other kinds of text files are intended to be eventually read by humans. Some are simple, mostly unstructured text, like this file you are currently reading. A kind you will encounter widely in the archive is Markdown, signified by the .md extension to a file, which is a kind of intermediate form meant to be readable by humans in their raw form and also, at the same time, structured so that computers can format them into more visually appealing and useful layouts. Most repositories in this archive have a README.md Markdown file, which is generally intended as an initial introduction to the repository, describing what it is, why it exists, and how to use it.
 
-A brief overview of the most common forms of non-text files may also be useful. Compiled code is non-text. JPG and PNG files encode images in digital format, and MP3 and WAV encode audio. PDF files encode documents with precise, perfect formatting. And ZIP and TAR files, as previously mentioned, are container files which may in turn include one more many other files.
+A brief overview of the most common forms of non-text files may also be useful. Compiled code is non-text. JPG and PNG files encode images in digital format, and MP3 and WAV encode audio. PDF files encode documents with precise, perfect formatting. And ZIP and TAR files, as previously mentioned, are container files which may in turn include one or many other files.
 
 ## Human Languages and Programming Languages
 
