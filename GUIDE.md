@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This archive, the GitHub Code Vault, was established by the GitHub Archive Program, whose mission is to preserve open source software for future generations. You may be reading this one year from now, or one thousand, but either way, we hope its contents, and perhaps the very concept of open source, are useful to you.
+This archive, the GitHub Code Vault, was established by the GitHub Archive Program, whose mission is to preserve open source software for future generations. You may be reading this one year from its creation, or one thousand, but either way, we hope its contents, and perhaps the very concept of open source, are useful to you.
 
 This is primarily an archive of software. Software is a series of commands used to control the actions of a computer. A computer is a device which can automatically perform mathematical functions so much faster than a human mind that it has powers far beyond us. Our computers are used to help explore the secrets of the universe, to connect all of humanity in an omnipresent web of information, to manipulate signals fast enough to transmit sounds and project detailed moving images onto electrical screens, and to control enormously powerful machinery which far exceeds both the capacity and precision of human labor.
 
@@ -40,7 +40,7 @@ Of course, not all of these repositories are equally important in terms of their
 
 The archive consists of 201 reels of film: one "guide reel" of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored in a visual form known as QR codes.
 
-Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either "on" or "off", corresponding to 1 or 0 -- and so binary data is vastly easier for computers to understand than any other.
+Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either "on" or "off", corresponding to 1 or 0 -- and so binary data is vastly easier for our current computers to understand than any other.
 
 The human-readable metadata stored at the beginning of each reel includes information about the film itself, a guide to the QR encoding used, a software program to decode it, and an index. The index lists the title, beginning frame number, and checksum for each file stored on that reel.
 
