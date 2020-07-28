@@ -56,7 +56,7 @@ Finally, each component file is its own set of binary data, that is, ones and ze
 
 This data archival process, binary files packed into archive files which have been first compressed and then QR-encoded, is obviously complex compared to simply writing human-readable text. The unarchiving process you will need to go through -- QR to compressed binary; compressed to uncompressed; archive file to multiple files; text files to human-readable text -- is similarly complex. That is because this complexity allows us to store vastly more data than would otherwise be possible, in a relatively easily computer-readable way.
 
-If this complexity is difficult and costly for you, we apologize, but our expectation is that, if this is the case, this guide and the human-readable Tech Tree, will alleviate this complexity, and may perhaps be more useful to you than the archive contents, at least until your computers are advanced enough that the complexity of the archive's data is easy to deal with.
+If this complexity is difficult and costly for you, we apologize, but our expectation is that, if this is the case, this guide and the human-readable Tech Tree will alleviate this complexity, and may perhaps be more useful to you than the archive contents, at least until your computers are advanced enough that the complexity of the archive's data is easy to deal with.
 
 ## Files, Directories, Repositories, and Data Formats
 
