@@ -30,7 +30,7 @@ However, it's possible that you have inferior computers to ours, or even no comp
 
 ## What's Inside
 
-The archive is so large -- roughly 24 trillion bytes (explained below) -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes tens of millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
+The archive is so large -- roughly 21 trillion bytes (explained below) -- because it is extremely inclusive and democratic. Many millions of people make the software they write available to everyone. This archive includes a snapshot -- that is, a single copy, at a single moment in time -- of all the public software that GitHub's users are actively developing. This means it includes millions of separate repositories. Our hope is that this wide, democratic approach will be of interest to historians of the future.
 
 The repositories included in this archive were determined purely by their last commit time, meaning the last time they were updated, and their star count. (GitHub's users are all able to 'star' public repositories, to indicate that they are of interest or significance to them.) The snapshot was initiated on 02/02/2020, that is, on the second day of the month February, in the year 2020 of the Gregorian calendar, as we count time. The repositories included in it are: all repositories with any commits within the previous 80 days; all repositories with at least one star with any commits within the previous 365 days; and all repositories with at least 250 stars, regardless of when they were last updated.
 
@@ -38,7 +38,7 @@ Of course, not all of these repositories are equally important in terms of their
 
 ## An Overview Of The Archive
 
-The archive consists of 201 reels of film: one "guide reel" of human-readable information and guidance, and 200 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored in a visual form known as QR codes.
+The archive consists of 188 reels of film: one "guide reel" of human-readable information and guidance, which we call the Tech Tree, and 187 reels of archived software. Each reel includes 65,000 individual frames. The frames at the beginning of each reel, and the frames of the guide reel, include human-readable text and images. All other frames of film consist of digital data stored in a visual form known as QR codes.
 
 Digital data means data ultimately stored in binary format, i.e. as 0s and 1s, because computers themselves are binary -- controlled by electrical signals which are either "on" or "off", corresponding to 1 or 0 -- and so binary data is vastly easier for computers to understand than any other.
 
