@@ -468,7 +468,7 @@ _Crime and Punishment_ by Fyodor Dostoevsky
 
 _I, Claudius_ by Robert Graves
 
-_Star Maker_ Olaf Stapledon
+_Star Maker_ by Olaf Stapledon
 
 _Things Fall Apart_ by Chinua Achebe (Penguin)
 
