@@ -212,7 +212,7 @@ Web development:
 
 _Web Development with Node and Express_ by Ethan Brown (O&#39;Reilly)
 
-_Flask Web Developmen_t by Miguel Grinberg (O&#39;Reilly)
+_Flask Web Development_ by Miguel Grinberg (O&#39;Reilly)
 
 _RESTful Web APIs_ by Leonard Richardson, Mike Amundsen, Sam Ruby (O&#39;Reilly)
 
@@ -468,7 +468,7 @@ _Crime and Punishment_ by Fyodor Dostoevsky
 
 _I, Claudius_ by Robert Graves
 
-_Star Maker_ Olaf Stapledon
+_Star Maker_ by Olaf Stapledon
 
 _Things Fall Apart_ by Chinua Achebe (Penguin)
 
