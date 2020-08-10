@@ -1,7 +1,7 @@
 GitHub Arctic Code Vault: Tech Tree
 ===================================
 
-**Introduction: A Guide To The Tech Tree**
+## Introduction: A Guide To The Tech Tree
 
 What follows, which we call the Tech Tree, is a selection of works intended to describe how the world makes and uses software today, as well as an overview of how computers work and the foundational technologies required to make and use computers. The purpose of the GitHub Archive Program is to preserve open source software for future generations. This implies also preserving the knowledge of other technologies on which open-source software runs, along with a depiction of the open-source movement which brought this software into being.
 
@@ -38,7 +38,7 @@ It is perhaps worth noting that our advisory board stressed that ours is likely 
 
 What follows is a brief summary of each section, describing both the general topics it covers, and the works the Tech Tree includes to document our current understanding of those topics.
 
-**Fundamentals of computing and the Internet**
+## Fundamentals of computing and the Internet
 
 These books describe what computers are, from the silicon up -- electricity, transistors, binary logic, digital gates, bits, bytes, chips, ALUs, microprocessors, software -- as well as introducing what they can do. It also includes books which describe, at a high level, how computers can be connected together, and what that means. The works in question are:
 
@@ -54,7 +54,7 @@ _Tubes: A Journey To The Center Of The Internet_ by Andrew Blum (HarperCollins)
 
 _Introduction to Networking: How the Internet Works_ by Charles Severance, illustrated by Mauro Toselli and Aimee Andrion (Charles Severance)
 
-**Algorithms and data structures**
+## Algorithms and data structures
 
 These are the fundamentals of computer science, and hence the foundation of software engineering; describing how data is structured and stored, and the most effective and efficient ways in which it can be processed.
 
@@ -80,7 +80,7 @@ _Learning MySQL and MariaDB_ by Russell J. T. Dyer (O&#39;Reilly)
 
 _PostgreSQL Development Essentials_ by Manpreet Kaur, Baji Shaik (Packt)
 
-**Compilers, assembler, and operating systems**
+## Compilers, assembler, and operating systems
 
 The purpose of the Archive Program is to preserve software, and these are the fundamental building blocks of software. These books help to explain how high-level written software becomes low-level electrical impulses:
 
@@ -100,7 +100,7 @@ _Understanding the Linux Kernel_ by Daniel P. Bovet and Marco Cesati (O&#39;Reil
 
 _Mastering Linux Kernel Development_ by Raghu Bharadwaj (Packt)
 
-**Programming languages**
+## Programming languages
 
 There are hundreds of programming languages; the enormous chart visualizing their evolution at the Computer History Museum is worth visiting if you&#39;re a developer, and we don&#39;t intend to document them all. Still, accessible book-length descriptions of a selection of the world&#39;s major languages seems desirable.
 
@@ -138,7 +138,7 @@ _Introducing Erlang_ by Simon St. Laurent (O&#39;Reilly)
 
 _Clojure Programming_ by Chas Emerick, Brian Carper, and Christophe Grand (O&#39;Reilly)
 
-**Networking and connectivity**
+## Networking and connectivity
 
 Computers are great, but in a way, so 20th century; it&#39;s _networked_ computers which are, at least arguably, the real technical revolution of the 21st. As such our networking protocols and technologies deserve considerable attention. We might hope our inheritors will either have long surpassed our networking, or will have the freedom to design anew rather than be shackled by all the compromises we&#39;ve needed to make for the sake of backwards compatibility but either way, hopefully they can learn something from what we&#39;ve done. Which is described by:
 
@@ -168,7 +168,7 @@ _Programming Internet Email_ by David Wood (O&#39;Reilly)
 
 _Computer and Information Security Handbook_ by John R. Vacca (Elsevier)
 
-**Modern software development**
+## Modern software development
 
 The line-by-line act of writing software is quite different from the team-by-team process of developing, testing, integrating, and deploying it. A few key approaches, tools, and roles are described here, including, for obvious reasons, unpacking Git itself.
 
@@ -204,11 +204,11 @@ _Site Reliability Engineering_ edited by Betsy Beyer, Chris Jone, Jennifer Petof
 
 _Designing Distributed Systems_ by Brendan Burns (O&#39;Reilly)
 
-**Modern software applications**
+## Modern software applications
 
 It would take a tech forest, not a tree, to even try to describe all of the uses to which software is put. However, some depictions of how individual projects and libraries are knit together into powerful networked applications seem valuable, as do overviews of e.g. virtualization, &quot;big data&quot; software, and especially machine learning.
 
-Web development:
+### Web development
 
 _Web Development with Node and Express_ by Ethan Brown (O&#39;Reilly)
 
@@ -218,7 +218,7 @@ _RESTful Web APIs_ by Leonard Richardson, Mike Amundsen, Sam Ruby (O&#39;Reilly)
 
 _Ruby on Rails Tutorial_ by Michael Hartl (Pearson)
 
-Scientific computing:
+### Scientific computing
 
 _Mastering Scientific Computing with R_ by Paul Gerrard and Radia M. Johnson (Packt)
 
@@ -226,7 +226,7 @@ _Computer Vision and Image Processing_ by Linda Shapiro (Elsevier)
 
 _Image Processing: Principles and Applications_ by Tinku Acharya and Ajoy K. Ray (Wiley) --
 
-Machine learning:
+### Machine learning
 
 _Deep Learning from Scratch_ by Seth Weidman (O&#39;Reilly)
 
@@ -238,7 +238,7 @@ _Generative Deep Learning_ by David Foster (O&#39;Reilly)
 
 _Strengthening Deep Neural Networks_ by Katy Warr (O&#39;Reilly)
 
-Virtualization and containers:
+### Virtualization and containers
 
 _Virtualization Essentials_ by Matthew Portnoy (Wiley)
 
@@ -250,21 +250,21 @@ _Spark: The Definitive Guide_ by Bill Chambers, Matei Zaharia (O&#39;Reilly)
 
 _Pervasive Computing_ by Ciprian Dobre and Fatos Xhafa (Elsevier)
 
-Reliability and scaling:
+### Reliability and scaling
 
 _Database Reliability Engineering_ by Laine Campbell and Charity Majors (O&#39;Reilly)
 
 _The Art of Capacity Planning_ by Arun Kejariwal and John Allspaw (O&#39;Reilly)
 
-Economics and sociotechnical systems:
+### Economics and sociotechnical systems
 
 _The Economics of Information Technology_ by Hal Varian, Joseph Farrell and Carl Shapiro (Cambridge University Press)
 
-**Hardware architectures**
+## Hardware architectures
 
 The spectrum of complexity from a single analog transistor to a modern multicore processor is, needless to say, difficult to summarize. This section tries to describe the basics of digital circuits and microprocessors, along with a few key references, before going on to hardware architectures and hardware design languages.
 
-Fundamental electronics and elements:
+### Fundamental electronics and elements
 
 _TTL Cookbook_
 
@@ -282,7 +282,7 @@ _Programming Microcontrollers in C_ by Ted VanSickle (Elsevier)
 
 _Introduction to Microprocessors and Microcontrollers_ by John Crisp (Elsevier)
 
-Modern hardware architecture:
+### Modern hardware architecture
 
 _Fundamentals of Computer Organization and Architecture_ by Mostafa Abd-El-Barr and Hesham El-Rewini (Wiley) --
 
@@ -296,7 +296,7 @@ _Digital Design and Computer Architecture_ by Sarah Harris and David Harris (Els
 
 _Introduction to Parallel Processing_ by Behrooz Parhami (Springer)
 
-HDLs:
+### HDLs
 
 _IEEE Standard VHDL Language Reference Manual_ (IEEE)
 
@@ -304,7 +304,7 @@ _IEEE Standard for SystemVerilog_ (IEEE)
 
 _VHDL 101_ by William Kafig (Elsevier)
 
-Example architecture details:
+### Example architecture details
 
 _See MIPS Run, 2nd Edition_ by Dominic Sweetman (Elsevier)
 
@@ -316,7 +316,7 @@ _ARM Architecture Reference Manual_ by ARM
 
 _Intel® 64 and IA-32 Architectures Software Developer&#39;s Manuals_ by Intel
 
-GPUs and FPGAs:
+### GPUs and FPGAs
 
 _Reconfigurable Computing_ by Scott Hauck and André DeHon (Elsevier)
 
@@ -326,7 +326,7 @@ _Advanced FPGA Design_ by Steve Kitts (Wiley) --
 
 _Multicore and GPU Programming_ by Gerassimos Barlas (Elsevier)
 
-**Hardware development**
+## Hardware development
 
 Here we try to provide some examples and explanations of hardware development beyond that of computer I/O devices; imaging, drones, and robots.
 
@@ -346,7 +346,7 @@ _How to Make a Robot_ by Gordon McComb (Make)
 
 _Mastering ROS for Robotics Programming_ by Lentin Joseph (Packt)
 
-**Electronic components, transistors, semiconductor manufacturing**
+## Electronic components, transistors, semiconductor manufacturing
 
 A more low-level analysis of fundamental electronic components and transistor-based circuitry, along with textbooks describing lithography and chip manufacturing. Obviously such manufacturing is essentially impossible to recreate from scratch (Moore&#39;s lesser-known second law described how fabricator costs increase just as chip density decreases) but these works could conceivably be of historical or even practical significance.
 
@@ -370,7 +370,7 @@ _Fundamentals of Semiconductor Manufacturing and Process Control_ by Gary S. May
 
 _Semiconductor Manufacturing Handbook_ (both editions) by Hwaiyu Geng (McGraw-Hill)
 
-**Radio, television, and other industrial technologies**
+## Radio, television, and other industrial technologies
 
 Descriptions of other technologies which have helped to define our era, ranging from electrical power grids to radio and television.
 
@@ -390,7 +390,7 @@ _Newnes Guide to Television and Video Technology_ by K. F. Ibrahim (Elsevier)
 
 _Satellite Communications Systems_ by Gerard Maral, Michel Bousquet, Zhili Sun (Wiley) --
 
-**Pre-industrial technologies**
+## Pre-industrial technologies
 
 These are the works which address the &quot;romantic catastrophe&quot; image of the archive&#39;s inheritors, who seek to reboot all of modern technological civilization from pre-industrial scratch. Such possible futures do exist, although they seem unlikely; furthermore, it seems possible that these works might help fill in gaps which arise in historical knowledge.
 
@@ -420,7 +420,7 @@ _Foxfire Books 1-6_ by Eliot Wigginton (Anchor)
 
 _Oxford Handbook of Infectious Diseases and Microbiology_ by Estée Török, Ed Moran, and Fiona Cooke (OUP)
 
-**Women and Technology**
+## Women and Technology
 
 We believe women&#39;s unique role in founding and shaping computing and technology deserves its own section. Women&#39;s erasure in the field has meant there aren&#39;t always primary sources from the original time of contribution (like books authored by women), and historians are finding that women&#39;s contributions have been quite significant. Including this section allows us to appropriately acknowledge the work. Special thanks to Mar Hicks; many references in this section borrow from their Women in Computing course at the University of Wisconsin-Madison. We also include literature discussing tech&#39;s negative impact on women.
 
@@ -438,7 +438,7 @@ _Grace Hopper and the Invention of the Information Age_ by Kurt Beyer (MIT Press
 
 _Gender Codes: Why Women are Leaving Computing_ by Thomas J. Misa (Wiley)
 
-**Languages**
+## Languages
 
 Our professional linguistic advice was that, contrary to popular belief, the drift of English syntax and grammar has slowed dramatically, and barring some massive catastrophe it&#39;s very likely that English will both survive and be largely recognizable a thousand years from now. To hedge our bets, though, we have included a &quot;Rosetta&quot; guide translated into Arabic, Hindi, Spanish, and Chinese in every reel of the Archive, along with the Universal Declaration of Human Rights in every available written language, and will similarly include dictionaries and a couple of linguistic works here.
 
@@ -454,7 +454,7 @@ _The History Of Languages: An Introduction_ by Tore Janson (OUP)
 
 _Linguistic Diversity_ by Daniel Nettle (OUP)
 
-**Fiction, culture, and history**
+## Fiction, culture, and history
 
 It is our belief that culture is often best expressed through great works of fiction. As such, we sought to assemble a list of notable literary works (including / beginning with a few books of nonfiction) to convey, on a human level, the history and culture of our time. These are:
 
@@ -530,7 +530,7 @@ _The Visual Display of Quantitative Information_ by Edward Tufte (Graphics Press
 
 _Extraordinary Popular Delusions and the Madness Of Crowds_ by Charles Mackay
 
-**Cultural context**
+## Cultural context
 
 This section of the Tech Tree is intended to convey both useful practical information from our culture, and a depiction of what it was like at the time the archive was written. It will consist of encoded data, rather than imaged pages, largely because its centerpiece, a snapshot of Wikipedia, is far too large for the latter format.
 
@@ -542,7 +542,7 @@ This section will also include several other data sources recommended by GitHub&
 - Wikispecies
 - The File Formats Archive
 
-**The GitHub Arctic Code Vault**
+## The GitHub Arctic Code Vault
 
 As the Tech Tree is a companion piece to the GitHub Arctic Code Vault, it will contain an index with the name, brief description, and film reel number for all of the GitHub repositories stored in the Arctic Code Vault, i.e. every active public GitHub repo as of 02/02/2020.
 
