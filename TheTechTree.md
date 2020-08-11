@@ -204,6 +204,8 @@ _Site Reliability Engineering_ edited by Betsy Beyer, Chris Jone, Jennifer Petof
 
 _Designing Distributed Systems_ by Brendan Burns (O&#39;Reilly)
 
+_Exercises in Programming Style_ by Cristina Videira Lopes (CRC Press, 2020)
+
 ## Modern software applications
 
 It would take a tech forest, not a tree, to even try to describe all of the uses to which software is put. However, some depictions of how individual projects and libraries are knit together into powerful networked applications seem valuable, as do overviews of e.g. virtualization, &quot;big data&quot; software, and especially machine learning.
