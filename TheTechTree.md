@@ -120,6 +120,8 @@ _The C++ Primer_ by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo (Pears
 
 _Programming Rust_ by Jim Blandy and Jason Orendorff (O&#39;Reilly)
 
+_The Rust Programming Language_ by Steve Klabnik and Carol Nichols (No Starch Press)
+
 _The Go Programming Language_ by Alan A. A. Donovan and Brian W. Kernighan (Pearson)
 or
 _Head First Go_ by Jay McGavren (O&#39;Reilly)
