@@ -204,6 +204,8 @@ _Site Reliability Engineering_ edited by Betsy Beyer, Chris Jone, Jennifer Petof
 
 _Designing Distributed Systems_ by Brendan Burns (O&#39;Reilly)
 
+_Designing Data-Intensive Applications_ by Martin Kleppmann (O&#39;Reilly)
+
 _Exercises in Programming Style_ by Cristina Videira Lopes (CRC Press, 2020)
 
 ## Modern software applications
