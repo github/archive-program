@@ -60,6 +60,8 @@ These are the fundamentals of computer science, and hence the foundation of soft
 
 _The Art of Computer Programming_ by Donald Knuth (Pearson)
 
+_Introduction to Algortihms_ by Thomes H Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (MIT Press)
+
 _Sequential and Parallel Algorithms and Data Structures_ by Peter Sanders, Kurt Mehlhorn, Martin Dietzfelbinger, Roman Dementiev (Springer)
 
 _Cryptography_ by Simon Rubinstein-Salzedo (Springer)
