@@ -118,7 +118,7 @@ _Head First C_ by David Griffiths, Dawn Griffiths (O&#39;Reilly)
 
 _The C++ Primer_ by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo (Pearson)
 or
-*Mastering C++ by K R Venugopal, Rajkumar, T Ravishankar (Tata McGraw-Hill)*
+_Mastering C++_ by K R Venugopal, Rajkumar, T Ravishankar (Tata McGraw-Hill)
 
 _Programming Rust_ by Jim Blandy and Jason Orendorff (O&#39;Reilly)
 
