@@ -76,9 +76,7 @@ _Understanding MySQL Internals_ by Sasha Pachev (O&#39;Reilly)
 
 _Physical Database Design_ by Sam S. Lightstone, Toby J. Teorey, and Tom Nadeau (Elsevier)
 
-_Learning MySQL and MariaDB_ by Russell J. T. Dyer (O&#39;Reilly)
-
-_PostgreSQL Development Essentials_ by Manpreet Kaur, Baji Shaik (Packt)
+_Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design, Michael J. Hernandez (Addison-Wesley Professional)
 
 ## Compilers, assembler, and operating systems
 
