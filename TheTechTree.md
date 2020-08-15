@@ -168,6 +168,8 @@ _Programming Internet Email_ by David Wood (O&#39;Reilly)
 
 _Computer and Information Security Handbook_ by John R. Vacca (Elsevier)
 
+_Data Communications and Networking_ by Behrouz A. Forouzan
+
 ## Modern software development
 
 The line-by-line act of writing software is quite different from the team-by-team process of developing, testing, integrating, and deploying it. A few key approaches, tools, and roles are described here, including, for obvious reasons, unpacking Git itself.
