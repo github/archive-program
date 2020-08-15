@@ -532,6 +532,14 @@ _The Visual Display of Quantitative Information_ by Edward Tufte (Graphics Press
 
 _Extraordinary Popular Delusions and the Madness Of Crowds_ by Charles Mackay
 
+## Future and predictions
+
+_The Age of Spiritual Machines_ by Ray Kurzweil (Viking Press)
+
+_The Singularity Is Near_ by Ray Kurzweil (Viking Press)
+
+_Superintelligence: Paths, Dangers, Strategies_ by Nick Bostrom (Oxford University Press)
+
 ## Cultural context
 
 This section of the Tech Tree is intended to convey both useful practical information from our culture, and a depiction of what it was like at the time the archive was written. It will consist of encoded data, rather than imaged pages, largely because its centerpiece, a snapshot of Wikipedia, is far too large for the latter format.
