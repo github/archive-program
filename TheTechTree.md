@@ -60,7 +60,7 @@ These are the fundamentals of computer science, and hence the foundation of soft
 
 _The Art of Computer Programming_ by Donald Knuth (Pearson)
 
-_Introduction to Algortihms_ by Thomes H Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (MIT Press)
+_Introduction to Algorithms_ by Thomes H Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (MIT Press)
 
 _Sequential and Parallel Algorithms and Data Structures_ by Peter Sanders, Kurt Mehlhorn, Martin Dietzfelbinger, Roman Dementiev (Springer)
 
@@ -74,11 +74,11 @@ _Everyday Data Structures_ by William Smith (Packt)
 
 _Database Internals_ by Alex Petrov (O&#39;Reilly)
 
-_Understanding MySQL Internals_ by Sasha Pachev (O&#39;Reilly)
-
 _Physical Database Design_ by Sam S. Lightstone, Toby J. Teorey, and Tom Nadeau (Elsevier)
 
-_Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design, Michael J. Hernandez (Addison-Wesley Professional)
+_Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design_ by Michael J. Hernandez (Addison-Wesley Professional)
+
+_Theory of Computation_ by Michael Sipser (Cengage)
 
 ## Compilers, assembler, and operating systems
 
