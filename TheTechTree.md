@@ -78,7 +78,7 @@ _Physical Database Design_ by Sam S. Lightstone, Toby J. Teorey, and Tom Nadeau 
 
 _Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design_ by Michael J. Hernandez (Addison-Wesley Professional)
 
-_Theory of Computation_ by Michael Sipser (Cengage)
+_Introduction to the Theory of Computation_ by Michael Sipser (Cengage)
 
 ## Compilers, assembler, and operating systems
 
@@ -128,9 +128,9 @@ _Learning Java_ by Patrick Niemeyer and Daniel Leuck (O&#39;Reilly)
 
 _The Java Virtual Machine Specification_ by Tim Lindholm, Frank Yellin, Gilad Bracha, and Alex Buckley (Pearson)
 
-_Learning JavaScript_ by Ethan Brown (O&#39;Reilly)
+_JavaScript: The Definitive Guide_ by David Flanagan (O&#39;Reilly)
 
-_Mastering JavaScript Functional Programming_ by Federico Kereki (Packt)
+_JavaScript: The Good Parts_ by Douglas Crockford (O&#39;Reilly)
 
 _Learning Swift_ by Jonathon Manning, Paris Buttfield-Addison, and Tim Nugent (O&#39;Reilly)
 
