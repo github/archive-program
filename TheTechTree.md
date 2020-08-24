@@ -78,9 +78,7 @@ _Understanding MySQL Internals_ by Sasha Pachev (O&#39;Reilly)
 
 _Physical Database Design_ by Sam S. Lightstone, Toby J. Teorey, and Tom Nadeau (Elsevier)
 
-_Learning MySQL and MariaDB_ by Russell J. T. Dyer (O&#39;Reilly)
-
-_PostgreSQL Development Essentials_ by Manpreet Kaur, Baji Shaik (Packt)
+_Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design, Michael J. Hernandez (Addison-Wesley Professional)
 
 ## Compilers, assembler, and operating systems
 
@@ -199,6 +197,8 @@ _Accelerate: The Science of Lean Software and DevOps_ by Nicole Forsgren, Jez Hu
 _Continuous Delivery_ by Jez Humble and Dave Farley (Addison Wesley)
 
 _The Phoenix Project_ by Gene Kim, Kevin Behr, and George Spafford (IT Revolution Press)
+
+_Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin (Prentice Hall)
 
 _DevOps Handbook: How to Create World Class Agility, Reliability, &amp; Security in Technology Organizations_ by Gene Kim, Jez Humble, Patrick Debois, and John Willis (IT Revolution)
 
