@@ -224,6 +224,8 @@ _RESTful Web APIs_ by Leonard Richardson, Mike Amundsen, Sam Ruby (O&#39;Reilly)
 
 _Ruby on Rails Tutorial_ by Michael Hartl (Pearson)
 
+_Django for Professionals: Production Websites with Python & Django by William S. Vincent 
+
 ### Scientific computing
 
 _Mastering Scientific Computing with R_ by Paul Gerrard and Radia M. Johnson (Packt)
@@ -239,6 +241,8 @@ _Deep Learning from Scratch_ by Seth Weidman (O&#39;Reilly)
 _Fundamentals of Deep Learning_ by Nikhil Buduma and Nicholas Locascio (O&#39;Reilly)
 
 _Practical Convolutional Neural Networks_ by Mohit Sewak, Md. Rezaul Karim, and Pradeep Pujari (Packt)
+
+_Pattern Recognition and Machine Learning by Christopher Bishop
 
 _Generative Deep Learning_ by David Foster (O&#39;Reilly)
 
