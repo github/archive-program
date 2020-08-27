@@ -54,6 +54,8 @@ _Tubes: A Journey To The Center Of The Internet_ by Andrew Blum (HarperCollins)
 
 _Introduction to Networking: How the Internet Works_ by Charles Severance, illustrated by Mauro Toselli and Aimee Andrion (Charles Severance)
 
+_Computer Fundamentals_ by Anita Goel (Pearson Education)
+
 ## Algorithms and data structures
 
 These are the fundamentals of computer science, and hence the foundation of software engineering; describing how data is structured and stored, and the most effective and efficient ways in which it can be processed.
