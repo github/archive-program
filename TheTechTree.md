@@ -200,7 +200,7 @@ _Continuous Delivery_ by Jez Humble and Dave Farley (Addison Wesley)
 
 _The Phoenix Project_ by Gene Kim, Kevin Behr, and George Spafford (IT Revolution Press)
 
-_Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin (Prentice Hall)
+_Clean Code: A Handbook of Agile Software Craftsmanship_ by Robert C. Martin (Prentice Hall)
 
 _DevOps Handbook: How to Create World Class Agility, Reliability, &amp; Security in Technology Organizations_ by Gene Kim, Jez Humble, Patrick Debois, and John Willis (IT Revolution)
 
