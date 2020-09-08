@@ -170,9 +170,9 @@ _Programming Internet Email_ by David Wood (O&#39;Reilly)
 
 _Computer and Information Security Handbook_ by John R. Vacca (Elsevier)
 
-_Data Communications and Networking_ by Behrouz A. Forouzan
+_Data Communications and Networking_ by Behrouz A. Forouzan (McGraw-Hill)
 
-_Computer Networking: A Top-down Approach_ by Jim Kurose
+_Computer Networking: A Top-down Approach_ by Jim Kurose (Pearson)
 
 ## Modern software development
 
@@ -230,7 +230,7 @@ _RESTful Web APIs_ by Leonard Richardson, Mike Amundsen, Sam Ruby (O&#39;Reilly)
 
 _Ruby on Rails Tutorial_ by Michael Hartl (Pearson)
 
-_Django for Professionals: Production Websites with Python & Django by William S. Vincent 
+_Django for Professionals: Production Websites with Python & Django_ by William S. Vincent (Still River)
 
 ### Scientific computing
 
@@ -248,7 +248,7 @@ _Fundamentals of Deep Learning_ by Nikhil Buduma and Nicholas Locascio (O&#39;Re
 
 _Practical Convolutional Neural Networks_ by Mohit Sewak, Md. Rezaul Karim, and Pradeep Pujari (Packt)
 
-_Pattern Recognition and Machine Learning by Christopher Bishop
+_Pattern Recognition and Machine Learning_ by Christopher Bishop (Springer)
 
 _Generative Deep Learning_ by David Foster (O&#39;Reilly)
 
