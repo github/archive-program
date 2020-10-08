@@ -178,6 +178,8 @@ _Computer Networking: A Top-down Approach_ by Jim Kurose (Pearson)
 
 The line-by-line act of writing software is quite different from the team-by-team process of developing, testing, integrating, and deploying it. A few key approaches, tools, and roles are described here, including, for obvious reasons, unpacking Git itself.
 
+_Mythical Man-Month, The: Essays on Software Engineering, Anniversary Edition Anniversary Edition by Frederick Brooks Jr.
+
 _Working in Public: The Making and Maintenance of Open Source Software_ by Nadia Eghbal (Stripe Press)
 
 _The Manager&#39;s Path_ by Camille Fournier (O&#39;Reilly)
