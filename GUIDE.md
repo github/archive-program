@@ -86,15 +86,15 @@ There is no single suffix which indicates text files. Rather, for source code, t
 
 Here we will provide an overview of how to unpack a particular archived repository into its various constituent files. Again, this process consists of:
 
-1.  Identifying the specific reel and frames on which the repository's data is archived.
+1. Identifying the specific reel and frames on which the repository's data is archived.
 
-2.  Decoding from the QR codes, the fields of black, white, and gray pixels on those frames, into a binary file, a sequence of (at least thousands, and often millions of) 1s and 0s.
+2. Decoding from the QR codes, the fields of black, white, and gray pixels on those frames, into a binary file, a sequence of (at least thousands, and often millions of) 1s and 0s.
 
-3.  Unzipping the binary file into a longer, uncompressed archive file.
+3. Unzipping the binary file into a longer, uncompressed archive file.
 
-4.  Unpacking the archive file into the separate subfiles it contains. Note however that archive data is generally comprehensible, although messy, even if this step is omitted.
+4. Unpacking the archive file into the separate subfiles it contains. Note however that archive data is generally comprehensible, although messy, even if this step is omitted.
 
-5.  Finally, converting each of those subfiles -- themselves sequences of 1s and 0s which may range from quite short to very long -- into written characters, if they are text files.
+5. Finally, converting each of those subfiles -- themselves sequences of 1s and 0s which may range from quite short to very long -- into written characters, if they are text files.
 
 ### Identifying the specific reel and frames on which the repository's data is archived
 
@@ -110,23 +110,23 @@ This means, to get the CPython data: Go to frame 54321 of this reel of film. Dec
 
 The details of how to decode the film frames into binary data are found in the human-readable Representation Information which is found following the Table of Contents at the beginning of every reel of film on the archive. This information is found on every reel so that, even if an individual reel is separated from the archive, it will still be possible to decipher its contents. That Representation Information includes, in order:
 
-1.  A Guide to the GitHub Archive Program (this document)
+1. A Guide to the GitHub Archive Program (this document)
 
-2.  GitHub descriptive index, a list and brief description of all the repositories on this reel
+2. GitHub descriptive index, a list and brief description of all the repositories on this reel
 
-3.  Representation Information description
+3. Representation Information description
 
-4.  Digital Preservation and How to Retrieve Data, an overview of data retrieval details
+4. Digital Preservation and How to Retrieve Data, an overview of data retrieval details
 
-5.  Storage Medium description
+5. Storage Medium description
 
-6.  Data Retrieval Technology
+6. Data Retrieval Technology
 
-7.  Generic Preservation Reel Structure (reel format)
+7. Generic Preservation Reel Structure (reel format)
 
-8.  Generic 4K Frame format description
+8. Generic 4K Frame format description
 
-9.  Unboxing library description (for the QR codes)
+9. Unboxing library description (for the QR codes)
 
 10. Unboxing library source code
 
@@ -190,7 +190,7 @@ The key thing about source code is that it is written to be read by compilers. S
 
 That compiler will, in turn, through complicated sequences described in the Tech Tree, convert the source code into the sequences of ones and zeros that will cause the computer to perform the functions and activities described by the code. To take a very simple example, the line of code
 
-_for (int i=0; i<5; i++) { }_
+    _for (int i=0; i<5; i++) { }_
 
 will be converted by the compiler into a series of binary instructions fed to the computer, which will cause a tiny part of the computer, called a register, to set its value to 0, and subsequently increment that value to 1, 2, 3, and then 4. (This is not intended as an example of useful code; it is just an illustration of the many-layered process of turning source code into running software.)
 
@@ -220,35 +220,35 @@ Programs are generally divided into discrete steps, known as statements, which i
 
 There are hundreds of different programming languages, spread across many different forms, approaches, and philosophies. Some are compiled into separate binary files, which are then executed; some, known as "interpreted" languages, are effectively compiled and run all at once, with no interim stage. Most modern programming languages include libraries of pre-written functions, and such libraries can be very voluminous and elaborate. Some of today's most popular programming languages include:
 
--   C, one of the oldest and fastest, most universal, and most powerful languages, simple in some ways but quite limited in others, and not always intuitive, easy to read, or easy to learn.
+* C, one of the oldest and fastest, most universal, and most powerful languages, simple in some ways but quite limited in others, and not always intuitive, easy to read, or easy to learn.
 
--   C++, a more complex, abstract, and powerful evolution of C.
+* C++, a more complex, abstract, and powerful evolution of C.
 
--   C#, a further evolution compiled not into binary machine code but an interpreted "runtime".
+* C#, a further evolution compiled not into binary machine code but an interpreted "runtime".
 
--   Java, which is similar to (but predates) C#, is perhaps today's most widely used language.
+* Java, which is similar to (but predates) C#, is perhaps today's most widely used language.
 
--   JavaScript, quite unlike Java despite the similarity in name, and also known as 'ECMAScript', is a language initially used wholly within a web browser, i.e. a program which fetched, interpreted, and displayed data from a remote computer known as an Internet server; today, though, it is widely used on those servers as well.
+* JavaScript, quite unlike Java despite the similarity in name, and also known as 'ECMAScript', is a language initially used wholly within a web browser, i.e. a program which fetched, interpreted, and displayed data from a remote computer known as an Internet server; today, though, it is widely used on those servers as well.
 
--   TypeScript, a form of JavaScript with stricter rules so that errors, also known as bugs, are less likely to find their way into programs.
+* TypeScript, a form of JavaScript with stricter rules so that errors, also known as bugs, are less likely to find their way into programs.
 
--   Python, an elegant language popular among scientists, both powerful and a good first language.
+* Python, an elegant language popular among scientists, both powerful and a good first language.
 
--   Ruby, an intuitive language whose statements often read almost like written English.
+* Ruby, an intuitive language whose statements often read almost like written English.
 
--   Go, a simple, powerful language which especially excels at parallelized programs, i.e. programs written such that multiple functions run independently at the same time.
+* Go, a simple, powerful language which especially excels at parallelized programs, i.e. programs written such that multiple functions run independently at the same time.
 
--   Swift, a new language used to write for the phones and other devices used by a billion people.
+* Swift, a new language used to write for the phones and other devices used by a billion people.
 
--   Rust, intended as a replacement for C, one which makes dangerous bugs far less likely.
+* Rust, intended as a replacement for C, one which makes dangerous bugs far less likely.
 
--   PHP, a straightforward language used for Internet servers.
+* PHP, a straightforward language used for Internet servers.
 
--   Lisp, a very old language with a fundamentally different, function-first approach to programming.
+* Lisp, a very old language with a fundamentally different, function-first approach to programming.
 
--   SQL, a very different kind of language used to fetch data from structured and highly efficient stores of data known as databases.
+* SQL, a very different kind of language used to fetch data from structured and highly efficient stores of data known as databases.
 
--   Assembler (or assembly), a very cryptic, limited, but fast and powerful family of languages wherein there is a direct relationship between the language constructs and the machine code of the computer in question; it may be considered half-compiled code.
+* Assembler (or assembly), a very cryptic, limited, but fast and powerful family of languages wherein there is a direct relationship between the language constructs and the machine code of the computer in question; it may be considered half-compiled code.
 
 ## Development, Dependencies, and Open Source
 
