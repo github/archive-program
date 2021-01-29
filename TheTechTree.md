@@ -550,6 +550,8 @@ _The Visual Display of Quantitative Information_ by Edward Tufte (Graphics Press
 
 _Extraordinary Popular Delusions and the Madness Of Crowds_ by Charles Mackay
 
+_The Hitchhiker's Guide to the Galaxy_ by Douglas Adams
+
 ## Cultural context
 
 This section of the Tech Tree is intended to convey both useful practical information from our culture, and a depiction of what it was like at the time the archive was written. It will consist of encoded data, rather than imaged pages, largely because its centerpiece, a snapshot of Wikipedia, is far too large for the latter format.
