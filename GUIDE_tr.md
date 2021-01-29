@@ -20,7 +20,7 @@ Bu arşiv, dünyanın her yerinden insanların yazdıkları yazılım programlar
 
 Aşağıda, bu yazılım arşivinden en iyi şekilde yararlanmak için bilmeniz ve sahip olmanız gerektiğine inandığımız şeylerin bir açıklaması yer almaktadır. Bunların bir kısmını veya herhangi birini bilmiyor veya anlamıyorsanız, umutsuzluğa kapılmayın! Ayrıca bu gereksinimlerin nasıl yerine getirileceğine dair bir kılavuz da ekledik. Herhangi bir nedenle bunları kendiniz başaramazsanız, o zaman torunlarınız başarabilir.
 
-## Arşivi Kullanmanız Gerekenler
+## Arşivi Kullanmak için Elinizde Bulunması Gerekenler
 
 Prensip olarak, bu arşivin içeriğine erişmek için ihtiyacınız olan tek şey bir aydınlatma kaynağı ve bir çeşit büyüteçtir. Bununla birlikte, verilerinin çoğu (hepsi olmasa da) kodlanmış ve sıkıştırılmış bir biçimde film makaralarına çok sıkı bir şekilde paketlenmiştir. Bu verilerin okunması, kodunun çözülmesi ve sıkıştırmasının açılması, hatırı sayılır bir hesaplama gerektirecektir. Teoride bilgisayar olmadan da yapılabilir ama çok sıkıcı ve zor olurdu.
 
@@ -102,7 +102,7 @@ Her bir film makarası boş bir filmin lideriyle başlar ve daha sonra boş bir 
 
 Bu makaradaki her depo, bu Kullanıcı Veri Dosyalarından biridir. Liste, benzersiz bir kimlik, bir dosya kimliği ve bu dosyaların her biri için bir ad içerir. Örneğin, Python hesabının CPython deposu, 12345 olarak listelenen dosya kimliğine ve python_cpython.tar olarak listelenen ada sahip olabilir.
 
-Kullanıcı Veri Dosyaları listesinin ardından, Dijital Veri Konumlarının bir listesi bulunmaktadır. Bu liste dosya kimliğini, bir başlangıç çerçevesini, bir başlangıç baytını, bir bitiş çerçevesini ve bir bitiş baytını içerir. Dolayısıyla, varsayımsal CPython örneğini kullanarak, bu listedeki 12345 kimliğine sahip öğenin başlangıç ​​çerçevesi 054321, başlangıç ​​baytı 03210321, bitiş çerçevesi 054545 ve bitiş baytı 12321232 olabilir.
+Kullanıcı Veri Dosyaları listesinin ardından, Dijital Veri Konumlarının bir listesi bulunmaktadır. Bu liste dosya kimliğini, bir başlangıç çerçevesini, bir başlangıç baytını, bir bitiş çerçevesini ve bir bitiş baytını içerir. Dolayısıyla, varsayımsal CPython örneğini kullanarak, bu listedeki 12345 kimliğine sahip öğenin başlangıç çerçevesi 054321, başlangıç baytı 03210321, bitiş çerçevesi 054545 ve bitiş baytı 12321232 olabilir.
 
 Bunun anlamı, CPython verilerini almak için: Bu film makarasının 54321 karesine gidin. Başlangıç çerçevesi 54321'den bitiş çerçevesi 54545'e kadar tüm karelerin kodunu, aşağıda açıklanan yöntemlerle ikili değerlere çevirin. Bu size 54321'den 54545'e kadar numaralandırılmış 225 adet veri verecektir, bu veri içermeyen bir dizi boş parça ile başlayacaktır. İlk boş olmayan veri parçasındaki ilk 3210320 baytı atın. Sırayla tüm "ortadaki" veri parçalarını ekleyin. Son olarak, son veri parçası olan 54545'ten ilk 12321232 baytı ekleyin. Artık tüm CPython havuzunu tek bir sıkıştırılmış arşiv dosyası olarak bir araya getirdiniz.
 
