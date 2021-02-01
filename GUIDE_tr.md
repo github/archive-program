@@ -22,11 +22,11 @@ Aşağıda, bu yazılım arşivinden en iyi şekilde yararlanmak için bilmeniz 
 
 ## Arşivi Kullanmak için Elinizde Bulunması Gerekenler
 
-Prensip olarak, bu arşivin içeriğine erişmek için ihtiyacınız olan tek şey bir aydınlatma kaynağı ve bir çeşit büyüteçtir. Bununla birlikte, verilerinin çoğu (hepsi olmasa da) kodlanmış ve sıkıştırılmış bir biçimde film makaralarına çok sıkı bir şekilde paketlenmiştir. Bu verilerin okunması, kodunun çözülmesi ve sıkıştırmasının açılması, hatırı sayılır bir hesaplama gerektirecektir. Teoride bilgisayar olmadan da yapılabilir ama çok sıkıcı ve zor olurdu.
+İlke olarak, bu arşivin içeriğine erişmek için ihtiyacınız olan tek şey bir aydınlatma kaynağı ve bir çeşit büyüteçtir. Bununla birlikte, verilerinin çoğu (hepsi olmasa da) kodlanmış ve sıkıştırılmış bir biçimde film makaralarına çok sıkı bir şekilde paketlenmiştir. Bu verilerin okunması, kodunun çözülmesi ve sıkıştırmasının açılması, hatırı sayılır bir hesaplama gerektirecektir. Teoride bilgisayar olmadan da yapılabilir ama çok sıkıcı ve zor olurdu.
 
 Bizim beklentimiz, yazılım, bilgisayar ve diğer terimlerle ilgili tanımlarımıza ihtiyacınız olmamasıdır. Muhtemelen bizimkinden çok daha gelişmiş ve muhtemelen temelde farklı bir şekilde tasarlanmış, kendi bilgisayarlarınız olduğunu hayal ediyoruz. Aşağıdaki genel bakışı ve kılavuzu anladıktan sonra, tüm verilere kolayca erişebileceksiniz.
 
-Bununla birlikte, bizimkinden daha düşük bilgisayarlara sahip olmanız veya hatta hiç bilgisayarınız olmaması mümkündür. Böyle bir olasılık durumunda, Teknoloji Ağacı adını verdiğimiz sıkıştırılmamış, kodlanmamış, insan tarafından okunabilir bir veri makarası hazırladık. Teknoloji Ağacı, zamanla bu arşivdeki açık kaynak yazılımı kullanabilen bilgisayarları yeniden oluşturmak için bu bilgileri kullanabilmeniz umuduyla temel teknolojilerimiz, bilgisayarlarımız ve yazılımımız hakkında bilgiler içerir.
+Bununla birlikte, bizimkinden daha ilkel bilgisayarlara sahip olmanız veya hatta hiç bilgisayarınız olmaması mümkündür. Böyle bir olasılık durumunda, Teknoloji Ağacı adını verdiğimiz sıkıştırılmamış, kodlanmamış, insan tarafından okunabilir bir veri makarası hazırladık. Teknoloji Ağacı, zamanla bu arşivdeki açık kaynak yazılımı kullanabilen bilgisayarları yeniden oluşturmak için bu bilgileri kullanabilmeniz umuduyla temel teknolojilerimiz, bilgisayarlarımız ve yazılımımız hakkında bilgiler içerir.
 
 ## İçinde Ne Var
 
@@ -46,7 +46,7 @@ Her makaranın başında depolanan, insan tarafından okunabilir meta veriler, f
 
 Dosya, tutarlı tek bir veri varlığıdır. Sağlama toplamı, karma işlevi olarak bilinen bir hesaplamanın benzersiz bir değeridir ve içeriğinin zarar görmediğinden veya bozulmadığından emin olmak için bir dosyanın tüm içeriği üzerinde çalışır; arşivde kullanılan hash işlevi 'SHA-1' olarak bilinir.
 
-Her QR kodu, filmin neredeyse tüm karesini kaplayan küçük beyaz veya siyah karelerden oluşan bir alandan oluşur. QR kodlarını, insan tarafından okunabilir metinden çok daha kompakt ve sağlam oldukları için kullanıyoruz. Bir QR kodu ikili verilere, yani bir dizi bir ve sıfıra kod çözer.
+Her QR kodu, filmin neredeyse tüm karesini kaplayan küçük beyaz veya siyah karelerden oluşan bir alandan oluşur. QR kodlarını, insan tarafından okunabilir metinden çok daha kompakt ve sağlam oldukları için kullanıyoruz. Bir QR kodu ikili verilere, yani bir dizi bir ve sıfıra çözülür.
 
 Bu kod çözme, bu ikili verileri anlamlı bilgilere dönüştürmenin yalnızca ilk adımıdır. Sıkıştırılmış verilerdir, yani A harfini 128 kez yazmak yerine "128xA" yazılmasına benzer şekilde, yerden tasarruf etmek için sıkıştırılmıştır. Kodu çözüldükten sonra açılmalıdır.
 
@@ -56,15 +56,15 @@ Son olarak, her bileşen dosyası kendi ikili veri kümesidir, yani birler ve s�
 
 Bu veri arşivleme süreci, önce sıkıştırılmış ve sonra QR ile kodlanmış arşiv dosyalarına paketlenmiş ikili dosyalar, basitçe insan tarafından okunabilir metin yazmakla karşılaştırıldığında açıkça karmaşıktır. Geçmeniz gereken arşivden çıkarma süreci - QR'den sıkıştırılmış ikiliye; sıkıştırılmamış olarak sıkıştırılmış; arşiv dosyasını birden çok dosyaya; metin dosyalarını insan tarafından okunabilir metne dönüştürmek - benzer şekilde karmaşıktır. Bunun nedeni, bu karmaşıklığın, normalde mümkün olandan çok daha fazla veriyi nispeten kolay bir şekilde bilgisayar tarafından okunabilir bir şekilde depolamamıza izin vermesidir.
 
-Bu karmaşıklık sizin için zor ve maliyetliyse özür dileriz, ancak beklentimiz, bu durumda bu kılavuzun ve insan tarafından okunabilen Teknoloji Ağacının bu karmaşıklığı hafifleteceği ve belki de sizin için arşivden daha yararlı olabileceği yönündedir. içerikler, en azından bilgisayarlarınız arşiv verilerinin karmaşıklığıyla başa çıkmanın kolay olacağı kadar gelişene kadar.
+Bu karmaşıklık sizin için zor ve maliyetliyse özür dileriz, ancak beklentimiz, bu durumda bu kılavuzun ve insan tarafından okunabilen Teknoloji Ağacının bu karmaşıklığı hafifleteceği ve belki de sizin için arşivden daha yararlı olabileceği yönündedir, en azından bilgisayarlarınız arşiv verilerinin karmaşıklığıyla başa çıkmanın kolay olacağı kadar gelişene kadar.
 
 ## Dosyalar, Dizinler, Depolar ve Veri Biçimleri
 
 Arşivin mantıksal olarak nasıl bölündüğünü tartışmak öğretici olabilir. Özellikle, dosyalar, dizinler ve veri formatları hakkında bir tartışma muhtemelen yardımcı olacaktır.
 
-Bir dosya, tek bir ada sahip tutarlı bir varlık halinde gruplandırılmış bir veri koleksiyonudur: veriyi kum olarak düşünün ve bir dosyayı kum ve yalnızca kum tutabilen bir tür çanta olarak düşünün. Bir dizin, bir dosya koleksiyonudur: onu yalnızca diğer çantaları tutabilen bir tür çanta olarak düşünün. Bu metaforu takiben, her depo, bir dizi dosya ve / veya birkaç dizin içeren, kök dizin olarak bilinen bir dış dizinden oluşur. Her bir dizin sırayla hem dosyaları hem de dizinleri içerebilir.
+Bir dosya, tek bir ada sahip tutarlı bir varlık halinde gruplandırılmış bir veri topluluğudur: veriyi kum olarak düşünün ve bir dosyayı kum ve yalnızca kum tutabilen bir tür çanta olarak düşünün. Bir dizin, bir dosya koleksiyonudur: onu yalnızca diğer çantaları tutabilen bir tür çanta olarak düşünün. Bu metaforu takiben, her depo, bir dizi dosya ve / veya birkaç dizin içeren, kök dizin olarak bilinen bir dış dizinden oluşur. Her bir dizin sırayla hem dosyaları hem de dizinleri içerebilir.
 
-Bu yapı tercih edilir çünkü gruplar halinde düzenlenmiş dosyalar, tek bir dosya koleksiyonuyla çalışmaktan çok daha kolaydır. Dış dizindeki belirli bir dosyanın tanımlayıcısı, kökten başlayarak, her adın arasında bir / karakteri olan kendi bireysel adıyla başlayan, onu kapsayan tüm dizinlerin adlarından oluşur. Örneğin, kök dizinde README.md adlı bir dosya /README.md olarak tanımlanacak ve /public/www/index.html olarak tanımlanan bir dosya, 'www' dizinindeki 'www' dizininde bulunan index.html olacaktır. kök dizinin içindeki public 'dizini.
+Bu yapı tercih edilir çünkü gruplar halinde düzenlenmiş dosyalar, tek bir dosya yığınıyla çalışmaktan çok daha kolaydır. Dış dizindeki belirli bir dosyanın tanımlayıcısı, kökten başlayarak, her adın arasında bir / karakteri olan kendi bireysel adıyla başlayan, onu kapsayan tüm dizinlerin adlarından oluşur. Örneğin, kök dizinde README.md adlı bir dosya /README.md olarak tanımlanacak ve /public/www/index.html olarak tanımlanan bir dosya, 'www' dizinindeki 'www' dizininde bulunan index.html olacaktır. kök dizinin içindeki public 'dizini.
 
 Her bir arşivin, arşivde bir _ veya alt çizgi karakteri olan bir bölücü ile ayrılmış iki adı vardır. (Tarihsel olarak bir / veya bölü çizgisi idi, ancak bu aynı zamanda bir dizini belirtmek için de kullanıldı, bu nedenle netlik için _ kullanırız.) İlk ad, o depoya sahip olan GitHub hesabıdır; ikincisi, bireysel arşivin adıdır. Arşiv ve dosya tanımlayıcılarının kombinasyonu, arşivdeki tek bir dosyayı benzersiz şekilde tanımlamak için kullanılabilir. Örneğin, GitHub hesabı 'rezendi' içindeki 'ykarma' havuzundaki 'web' dizinindeki 'package.json' dosyası arşivdeki rezendi_ykarma'da /web/package.json olarak benzersiz bir şekilde tanımlanabilir.
 
@@ -72,9 +72,9 @@ Farklı türdeki dosyaların farklı amaçları vardır. GitHub arşivi büyük 
 
 Görsel görüntüleri temsil eden veya derlenmiş kod içeren dosyalar gibi metin dosyaları olmayan dosyalara genellikle ikili dosyalar denir. Metin dosyaları da sonuçta 1'ler ve 0'lar olduğu için bu maalesef yanıltıcı bir terimdir. Metin dosyası olmayan dosyalara metin olmayan dosyalar olarak atıfta bulunacağız.
 
-Yazılı insan dilini 1'ler ve 0'ları kullanarak temsil etmenin birçok yolu vardır. Tarihsel nedenlerden ötürü, kaynak kodların çoğu orijinal olarak Latin alfabesi olarak bilinen şekilde yazılmıştır. Latin alfabesi, konuşulabilir kelimeleri temsil etmek için kullanılan 26 temel karaktere sahiptir ve bunların her biri iki biçime sahiptir, büyük harf ve küçük harf. Ayrıca sayıları temsil etmek için 10 hanesi vardır. Latin alfabesi, yapıyı ve diğer kavramları belirtmek için kullanılan çeşitli diğer ilişkili sembollerle birlikte, 128 farklı karakteri temsil edebilen ve tarihsel nedenlerle çoğu yazılımda uzun yıllar baskın olan 'ASCII' olarak bilinen bir formatta 1'ler ve 0'lara kodlanmıştır. .
+Yazılı insan dilini 1'ler ve 0'ları kullanarak temsil etmenin birçok yolu vardır. Tarihsel nedenlerden ötürü, kaynak kodların çoğu orijinal olarak Latin alfabesi olarak bilinen şekilde yazılmıştır. Latin alfabesi, konuşulabilir kelimeleri temsil etmek için kullanılan 26 temel karaktere sahiptir ve bunların her biri iki biçime sahiptir, büyük harf ve küçük harf. Ayrıca sayıları temsil etmek için 10 rakamı vardır. Latin alfabesi, yapıyı ve diğer kavramları belirtmek için kullanılan çeşitli diğer ilişkili sembollerle birlikte, 128 farklı karakteri temsil edebilen ve tarihsel nedenlerle çoğu yazılımda uzun yıllar baskın olan 'ASCII' olarak bilinen bir formatta 1'ler ve 0'lara kodlanmıştır.
 
-Bununla birlikte, Latin alfabesi, insanların kendilerini yazılı dilde ifade ettikleri birçok yolun yalnızca küçük bir alt kümesidir. Diğer komut dosyalarını desteklemek ve ASCII'yi kullanmak üzere yazılmış olan tüm yazılımların değişiklik yapmadan çalışmaya devam etmesine izin verirken (geriye dönük uyumluluk olarak bilinen bir kavram), 'UTF-8' olarak bilinen başka bir veri formatı tanıtıldı.
+Bununla birlikte, Latin alfabesi, insanların kendilerini yazılı dilde ifade ettikleri birçok yolun yalnızca küçük bir alt kümesidir. Diğer komut dosyalarını desteklemek ve ASCII'yi kullanmak üzere yazılmış olan tüm yazılımların değişiklik yapmadan çalışmaya devam etmesine izin verirken (geriye dönük uyumluluk olarak bilinen bir kavram), 'UTF-8' olarak bilinen başka bir veri biçimi tanıtıldı.
 
 ASCII, kaynak kodun en yaygın biçimi olmaya devam etmektedir. Bu arşivin her makarası, ASCII karakterleri için bir rehber içerir. ASCII, UTF-8'in bir alt kümesidir, yani tüm ASCII kodlamaları da UTF-8 kodlamalarıdır. Kılavuz makara ayrıca tüm UTF-8 karakterlerinin bir özelliğini içerir. Bu arşivdeki neredeyse tüm metin dosyaları UTF-8 olarak kodlanmalıdır.
 
@@ -86,9 +86,9 @@ Metin dosyalarını gösteren tek bir son ek yoktur. Daha ziyade, kaynak kodu i�
 
 Burada, arşivlenmiş belirli bir havuzun çeşitli kurucu dosyalara nasıl açılacağına dair bir genel bakış sunacağız. Yine, bu süreç şunlardan oluşur:
 
-1. Depo verilerinin arşivlendiği belirli makara ve çerçeveleri tanımlama.
+1. Depo verilerinin arşivlendiği belirli makara ve çerçeveleri tespit etmek.
 
-2. QR kodlarından, bu çerçevelerdeki siyah, beyaz ve gri piksel alanlarından bir ikili dosyaya (en az binlerce ve genellikle milyonlarca) 1 ve 0'lık bir dizi kod çözme.
+2. QR kodlarını, bu çerçevelerdeki siyah, beyaz ve gri piksel alanlarından bir ikili dosyaya (en az binlerce ve genellikle milyonlarca) 1 ve 0'ların bir dizisine çözmek.
 
 3. İkili dosyayı daha uzun, sıkıştırılmamış bir arşiv dosyasına açmak.
 
@@ -98,7 +98,7 @@ Burada, arşivlenmiş belirli bir havuzun çeşitli kurucu dosyalara nasıl aç�
 
 ### Depo verilerinin arşivlendiği belirli makarayı ve çerçeveleri tanımlama
 
-Her bir film makarası boş bir filmin lideriyle başlar ve daha sonra boş bir çerçevenin bir köşesinde düz siyah bir dikdörtgenden oluşan Sıfır Referans Çerçevesi. İnsan tarafından okunabilen bir sonraki çerçeve, makara hakkında bilgi içeren Kontrol Çerçevesidir. Aşağıda, Kullanıcı Veri Dosyalarının bir listesini içeren İçindekiler Tablosu yer almaktadır.
+Her bir film makarası boş bir film öncüsüyle başlar ve daha sonra boş bir çerçevenin bir köşesinde düz siyah bir dikdörtgenden oluşan Sıfır Referans Çerçevesi gelir. İnsan tarafından okunabilen bir sonraki çerçeve, makara hakkında bilgi içeren Kontrol Çerçevesidir. Aşağıda, Kullanıcı Veri Dosyalarının bir listesini içeren İçindekiler Tablosu yer almaktadır.
 
 Bu makaradaki her depo, bu Kullanıcı Veri Dosyalarından biridir. Liste, benzersiz bir kimlik, bir dosya kimliği ve bu dosyaların her biri için bir ad içerir. Örneğin, Python hesabının CPython deposu, 12345 olarak listelenen dosya kimliğine ve python_cpython.tar olarak listelenen ada sahip olabilir.
 
@@ -110,7 +110,7 @@ Bunun anlamı, CPython verilerini almak için: Bu film makarasının 54321 kares
 
 Film karelerinin kodunun ikili verilere nasıl çözüleceğine ilişkin ayrıntılar, arşivdeki her film makarasının başlangıcında bulunan İçindekiler Tablosunun ardından bulunan insan tarafından okunabilir Temsili Bilgilerde bulunur. Bu bilgiler her makarada bulunur, böylece tek bir makara arşivden ayrılmış olsa bile içeriğini deşifre etmek mümkün olacaktır. Bu Temsil Bilgileri sırayla şunları içerir:
 
-1. GitHub Arşiv Programı Rehberi (bu belge)
+1. GitHub Arşiv Programı Kılavuzu (bu belge)
 
 2. GitHub tanımlayıcı indeksi, bu makaradaki tüm depoların bir listesi ve kısa açıklaması
 
@@ -130,7 +130,7 @@ Film karelerinin kodunun ikili verilere nasıl çözüleceğine ilişkin ayrınt
 
 10. Kitaplık kaynak kodunu kutudan çıkarma
 
-11. ASCII veri formatı spesifikasyonu
+11. ASCII veri biçimi belirtimi
 
 12. C programlama dili belirtimi
 
@@ -138,9 +138,9 @@ Film karelerinin kodunun ikili verilere nasıl çözüleceğine ilişkin ayrınt
 
 14. PDF kaynak kodu
 
-15. XZ dosya formatı spesifikasyonu (sıkıştırma / açma için, aşağıda açıklanmıştır)
+15. XZ dosya formatı belirtimi (sıkıştırma / açma için, aşağıda açıklanmıştır)
 
-Bu öğelerin altıncı bölümü olan Veri Erişim Teknolojisi belgesi, dijital olarak kodlanmış tek bir film karesindeki verileri yakalamak ve onu bilgisayar analizine uygun bir forma dönüştürmek için bir tarayıcı kullanmak için gereksinimleri ve süreçleri açıklar. Bunlardan sekizincisi, Generic 4K Frame format açıklaması, bir bilgisayarın böyle taranmış bir görüntüyü alıp ikili veriye dönüştürmesi için gerekli olan kaynak kodu dahil teknik bilgileri sağlar.
+Bu öğelerin altıncı bölümü olan Veri Erişim Teknolojisi belgesi, dijital olarak kodlanmış tek bir film karesindeki verileri yakalamak ve onu bilgisayar analizine uygun bir forma dönüştürmek için bir tarayıcı kullanmak için gereksinimleri ve süreçleri açıklar. Bunlardan sekizincisi, Generic 4K Frame Format açıklaması, bir bilgisayarın böyle taranmış bir görüntüyü alıp ikili veriye dönüştürmesi için gerekli olan kaynak kodu dahil teknik bilgileri sağlar.
 
 Prensip olarak, bir depoyu QR kodlu verilerden ikili verilere bilgisayar kullanmadan dönüştürmek teorik olarak mümkündür. Bununla birlikte, çok zor olacak ve muhtemelen iyi organize olmuş bir topluluktan aylar veya yıllar olmasa da haftalarca büyük bir çaba gerektirecektir. Depoların içerikleri bir bilgisayarda çalıştırılmak üzere tasarlanmış yazılımlar olduğundan, bir bilgisayarın yokluğunda kullanımları en iyi ihtimalle minimum olacaktır.
 
@@ -188,11 +188,11 @@ Farklı nedenlerle oluşturulmuş birçok farklı türde metin dosyası vardır.
 
 Kaynak kodla ilgili en önemli şey, derleyiciler tarafından okunmak üzere yazılmasıdır. Derleyiciler yazılım olduklarından, bunu ifade etmenin başka bir yolu da kaynak kodun bilgisayarlar tarafından okunmak üzere yazılmasıdır. Yazılım alanında yetenekli ve eğitimli olan diğer insanların anlayabilmesi için iyi kod da yazılır; ancak bu yalnızca bir derleyici anlayabilirse doğrudur.
 
-Bu derleyici, sırayla, Teknoloji Ağacında açıklanan karmaşık diziler yoluyla, kaynak kodunu, bilgisayarın kod tarafından açıklanan işlevleri ve etkinlikleri gerçekleştirmesine neden olacak birler ve sıfırlar dizisine dönüştürecektir. Çok basit bir örnek vermek gerekirse, kod satırı
+Bu derleyici, sırayla, Teknoloji Ağacında açıklanan karmaşık diziler yoluyla, kaynak kodunu, bilgisayarın kod tarafından açıklanan işlevleri ve etkinlikleri gerçekleştirmesine neden olacak birler ve sıfırlar dizisine dönüştürecektir. Çok basit bir örnek vermek gerekirse, 
 
-    _for (int i = 0; i <5; i ++) {} _
+    for (int i = 0; i <5; i ++) {} 
 
-derleyici tarafından bilgisayara beslenen bir dizi ikili talimata dönüştürülür, bu da bilgisayarın kayıt adı verilen küçük bir kısmının değerini 0'a ayarlamasına ve ardından bu değeri 1, 2, 3'e yükseltmesine neden olur. ve sonra 4. (Bu, yararlı bir kod örneği olarak tasarlanmamıştır; yalnızca kaynak kodunu çalışan yazılıma dönüştürmenin çok katmanlı sürecinin bir örneğidir.)
+kod satırı derleyici tarafından bilgisayara beslenen bir dizi ikili talimata dönüştürülür, bu da bilgisayarın kayıt adı verilen küçük bir kısmının değerini 0'a ayarlamasına ve ardından bu değeri 1, 2, 3'e yükseltmesine neden olur. ve sonra 4. (Bu, yararlı bir kod örneği olarak tasarlanmamıştır; yalnızca kaynak kodunu çalışan yazılıma dönüştürmenin çok katmanlı sürecinin bir örneğidir.)
 
 JSON, XML ve HTML gibi diğer metin dosyaları türleri, bilgisayarlar için verileri (komutların aksine) depolamak için kullanılır. Yapılandırılmış formatları, bu dosya gibi daha az yapılandırılmış hikaye anlatımı metinlerine göre okumayı zorlaştırsa da, genellikle insanlar tarafından da okunabilir.
 
@@ -276,8 +276,8 @@ Bu arşiv durumunda, herhangi bir proje için bağımlılıkların arşivin baş
 
 ### Açık kaynak
 
-Bir programı bilgisayarda çalıştırmak sadece derlenmiş makine kodunu gerektirdiğinden, kaynak kodu gizli tutulurken bunu dağıtmak mümkündür. Bu, kapalı kaynak modeli olarak bilinir. Bilgi işlemin ilk günlerinde, kaynak kodu genellikle makine koduyla birlikte dağıtıldı, ancak daha sonra yazılım karlı bir endüstri haline geldikçe, kapalı kaynak modeli daha yaygın hale geldi.
+Bir programı bilgisayarda çalıştırmak sadece derlenmiş makine kodunu gerektirdiğinden, kaynak kodu gizli tutulurken bunu dağıtmak mümkündür. Bu, kapalı kaynak modeli olarak bilinir. Bilgi işlemin ilk günlerinde, kaynak kodu genellikle makine koduyla birlikte dağıtıldı, ancak daha sonra yazılım kârlı bir endüstri haline geldikçe, kapalı kaynak modeli daha yaygın hale geldi.
 
-O zamandan beri, kaynak kodunu herkese açık hale getirmenin, herkesin kopyalayabileceği, dallandırabileceği ve geliştirebileceği, yazılım geliştirmeye çok daha etkili bir yaklaşım olduğu öğrenildi. Bir projenin kaynak kodunu okuyabilen daha fazla kişi, olası ihtiyaçları ve faydalı yeni özellikleri belirleyecek daha fazla insan, projeye katkıda bulunacak kadar daha fazla insan, hataları tespit edip düzeltmeler gönderebilecek daha fazla kişi ve test edip doğrulayacak daha fazla kişi anlamına gelir. bu yeni kod çalışıyor.
+O zamandan beri, kaynak kodunu herkese açık hale getirmenin, herkesin kopyalayabileceği, dallandırabileceği ve geliştirebileceği, yazılım geliştirmeye çok daha etkili bir yaklaşım olduğu öğrenildi. Bir projenin kaynak kodunu okuyabilen daha fazla kişi, olası ihtiyaçları ve faydalı yeni özellikleri belirleyecek daha fazla insan, projeye katkıda bulunacak kadar daha fazla insan, hataları tespit edip düzeltmeler gönderebilecek daha fazla kişi ve test edip doğrulayacak daha fazla kişi anlamına gelir. Bu model işe yaradı.
 
 Genel olarak, kapalı kaynak, yeni ve daha iyi fikirler bulmak ve benimsemek için mücadele eden daha küçük, dar görüşlü, parçalanmış topluluklara yol açar. Açık kaynak, birbirlerinin projelerinin büyümesine, gelişmesine ve başarılı olmasına yardımcı olan, birbirlerinin çalışmalarını bağımlılık olarak kullanan ve / veya kodlarını yeniden kullanan ve birbirlerinden öğrenen büyük, birbirine bağlı topluluklara yol açar. Açık kaynaklı yazılım, tüm insanlığın toplu kullanımı için bir araç setidir ve ne kadar çok ve daha iyi araçlara sahip olursak, bir tür olarak o kadar hızlı ve daha iyi ilerleyebiliriz.
