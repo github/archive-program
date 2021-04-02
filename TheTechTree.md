@@ -102,6 +102,8 @@ _Understanding the Linux Kernel_ by Daniel P. Bovet and Marco Cesati (O&#39;Reil
 
 _Mastering Linux Kernel Development_ by Raghu Bharadwaj (Packt)
 
+_Linux for Makers_ by Aaron Newcomb (Make)
+
 ## Programming languages
 
 There are hundreds of programming languages; the enormous chart visualizing their evolution at the Computer History Museum is worth visiting if you&#39;re a developer, and we don&#39;t intend to document them all. Still, accessible book-length descriptions of a selection of the world&#39;s major languages seems desirable.
@@ -431,6 +433,8 @@ _Materials Handbook_ by George S. Brady Henry R. Clauser, and John A. Vaccari (M
 _Build Your Own Metal Working Shop From Scrap Series by David Gingery_ (David Gingery)
 
 _Practical Self-Sufficiency_ by Dick and James Strawbridge (DK)
+
+_Make: Like The Pioneers_ (Make)
 
 _Where There Is No Doctor_ by David Werner (Hesperian)
 
