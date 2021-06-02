@@ -1,5 +1,5 @@
 # Guide du coffre-fort de code GitHub
-## introduction
+## Introduction
 
 Cette archive, le GitHub Code Vault, a été créée par le programme d'archives GitHub, dont la mission est de préserver les logiciels open source pour les générations futures. Vous lisez peut-être dans un an ou mille, mais dans tous les cas, nous espérons que son contenu, et peut-être le concept même d’open source, vous seront utiles.
 
