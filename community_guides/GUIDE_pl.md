@@ -249,3 +249,35 @@ Istnieją setki różnych języków programowania, rozproszonych w wielu różny
 * SQL, bardzo różny rodzaj języka używany do pobierania danych z ustrukturyzowanych i wysoce wydajnych magazynów danych znanych jako bazy danych.
 
 * Assembler (lub assembly), bardzo enigmatyczna, ograniczona, ale szybka i potężna rodzina języków, w której istnieje bezpośredni związek między konstrukcjami językowymi a kodem maszynowym danego komputera; może być uważany za kod w połowie skompilowany.
+
+## Rozwój, zależności i otwarte źródła
+
+### Rozwój
+
+Proces pobierania pojedynczego, prostego pliku z kodem źródłowym i przekształcania go w impulsy elektryczne w komputerze jest niezwykle złożony. Radzimy sobie z tą złożonością używając warstw abstrakcji. Abstrakcja znana jako zestaw instrukcji pozwala na użycie kodu maszynowego z jednego kompilatora na wielu różnych rodzajach komputerów. Autor kodu źródłowego zazwyczaj nie musi wiedzieć ani dbać o to, jaki rodzaj komputera, a nawet jaki zestaw instrukcji, zostanie użyty do uruchomienia tego kodu; jest to abstrahowane przez kompilator.
+
+Współczesne oprogramowanie jest z kolei znacznie bardziej złożone niż pojedynczy autor pracujący nad pojedynczym programem dla jednego komputera. Składa się ono z wielu autorów pracujących nad wieloma plikami w ramach jednego projektu, jednocześnie, często używając wielu języków programowania. Co więcej, każdy projekt zależy od innych, oddzielnych, samodzielnych projektów jako narzędzi i/lub komponentów, podczas gdy te projekty same są aktywnie rozwijane i są z kolei zależne od jeszcze innych projektów. Wyzwaniem współczesnego rozwoju oprogramowania jest sprawienie, by wszystkie te ruchome części elegancko i wydajnie współpracowały ze sobą.
+
+Kiedy wielu autorów kodu źródłowego, zwanych także programistami, pracuje nad jednym projektem, każdy z nich ma swój własny komputer i kopię całego projektu na swoim komputerze. Jeśli każdy z nich wprowadza zmiany, to każdy z nich ma inną wersję tego samego projektu. Proces uzgadniania wielu wersji projektu jest znany jako kontrola wersji. Jest ona zarządzana przez oprogramowanie do kontroli wersji; w tym archiwum przez oprogramowanie o nazwie Git, od którego nazwę wziął sam GitHub. Każde repozytorium w tym archiwum jest repozytorium Gita.
+
+Git może automatycznie łączyć różne wersje oprogramowania w jedną spójną formę, przy minimalnej interwencji człowieka. Git przechowuje również kompletną historię, która pozwala na cofnięcie się do poprzedniej wersji w razie potrzeby. Jednakże, aby zaoszczędzić miejsce, repozytoria tego archiwum zazwyczaj nie zawierają historii Gita.
+
+Kiedy wielu deweloperów podąża za projektem jednocześnie wieloma różnymi ścieżkami, nazywa się to rozgałęzieniem projektu, a ścieżki te nazywane są gałęziami. Uzgodniona główna gałąź projektu jest znana jako trunk, lub master branch. Git udostępnia narzędzie, którego programiści mogą użyć do podsumowania różnic pomiędzy dwiema gałęziami i zaproponowania połączenia swojej gałęzi z gałęzią drugiej. Nazywa się to pull request. Nowoczesne tworzenie oprogramowania polega w dużej mierze na tworzeniu gałęzi projektu, pisaniu lub edytowaniu oprogramowania w swojej gałęzi, a po zakończeniu, wysyłaniu pull requesta, aby Twoja praca została ponownie włączona do gałęzi głównej.
+
+### Zależności
+
+Zasadniczo każdy język programowania wspiera bazowanie na pracy innych. Bez ponownego wykorzystania pracy innych, każdy projekt byłby ogromnie trudniejszy i znacznie wolniejszy, a znikoma ilość projektów nigdy nie znalazłaby rzeczywistego zastosowania w prawdziwym świecie.
+
+Jeśli projekt A musi zawierać projekt B, aby A mógł wykonać swoją pracę, wtedy A jest znany jako zależny od projektu B, a B jest znany jako zależność projektu A. A może mieć wiele zależności, z których każda może mieć wiele własnych zależności itd. Ponadto, każda zależność dotyczy konkretnej wersji lub zakresu wersji danego projektu. Pełne zestawienie wszystkich warstw zależności projektu jest znane jako jego drzewo zależności.
+
+Generalnie, zależności są wyszczególnione wewnątrz plików z kodem źródłowym, zazwyczaj na samej górze, i za każdym razem, gdy kompilator lub interpreter znajdzie zależność, szuka jej w zestawie predefiniowanych katalogów. Ponieważ drzewo zależności w projekcie może być bardzo złożone, jest ono czasami przedstawiane w całości w pojedynczym pliku w ramach projektu, znanym jako lista pakietów. Na przykład, projekty Ruby mogą mieć Gemfile do tego celu, a projekty JavaScript mogą mieć plik package.json. Pozwala to narzędziom znanym jako oprogramowanie do zarządzania pakietami na pobranie wszystkich zależności dla projektu za jednym razem, z jednego lub wielu serwerów internetowych.
+
+W przypadku tego archiwum jest prawdopodobne, że zależności dla danego projektu istnieją w innych częściach archiwum. Aby znaleźć daną zależność w archiwum, należy najpierw odnaleźć jej nazwę w kodzie źródłowym lub na liście pakietów, której szczegóły różnią się w zależności od języka i frameworka, a następnie skorzystać z indeksu głównego w szpuli przewodnika lub, w przypadku jego braku, z indeksów na początku każdej szpuli, aby ustalić, na której szpuli i w której klatce (klatkach) można znaleźć dane repozytorium.
+
+### Otwarte źródło
+
+Ponieważ uruchomienie programu na komputerze wymaga jedynie skompilowanego kodu maszynowego, możliwe jest jego rozpowszechnianie przy jednoczesnym zachowaniu w tajemnicy kodu źródłowego. Jest to znane jako model zamkniętego źródła. W bardzo wczesnych dniach informatyki, kod źródłowy był zwykle rozpowszechniany razem z kodem maszynowym, ale później, gdy oprogramowanie stało się dochodową branżą, model zamkniętego źródła stał się bardziej powszechny.
+
+Od tego czasu nauczono się, że upublicznianie kodu źródłowego, aby każdy mógł go kopiować, rozgałęziać i ulepszać, jest o wiele bardziej efektywnym podejściem do rozwoju oprogramowania. Więcej osób, które mogą czytać kod źródłowy projektu, oznacza więcej osób, które mogą zidentyfikować potencjalne potrzeby i użyteczne nowe funkcje, więcej osób, które rozumieją projekt na tyle, by wnieść do niego swój wkład, więcej osób, które mogą zauważyć błędy i przesłać poprawki oraz więcej osób, które mogą przetestować i zweryfikować działanie nowego kodu.
+
+Ogólnie rzecz biorąc, zamknięte źródła prowadzą do mniejszych, odizolowanych, rozproszonych społeczności, które walczą o znalezienie i przyjęcie nowych i lepszych pomysłów. Otwarte oprogramowanie prowadzi do dużych, wzajemnie powiązanych społeczności, z których każda pomaga sobie nawzajem w rozwoju, rozkwicie i sukcesie swoich projektów, używając pracy innych jako zależności i/lub ponownie wykorzystując ich kod, ucząc się od siebie nawzajem. Oprogramowanie open source jest zestawem narzędzi do wspólnego użytku całej ludzkości, a im więcej i lepszych narzędzi mamy, tym szybciej i lepiej możemy rozwijać się jako gatunek.
