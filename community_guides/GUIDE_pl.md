@@ -181,3 +181,71 @@ Przez tysiąclecia ludzkość używała wielu znaków pisanych. Kodowanie używa
 Z powodów historycznych, ponieważ były one najpowszechniej używane w czasach i regionach, w których i kiedy zaczęto tworzyć oprogramowanie, grupa znaków (i pojęć) znana jako „ASCII” jest kodowana najbardziej efektywnie, po 1 bajcie na znak. Wszystko, co nie jest ASCII, jest kodowane jako 2 lub więcej bajtów na znak. Większość plików tekstowych w tym archiwum jest ASCII, ale znaczna ich liczba nie jest. Wiele innych będzie w większości ASCII z okazjonalnymi znakami spoza ASCII.
 
 Szczegółowa specyfikacja ASCII znajduje się w informacji o reprezentacji w każdej szpuli archiwum. Szczegółowa specyfikacja UTF-8 znajduje się na szpuli z przewodnikiem. Pierwszy plik danych na każdej szpuli archiwum będzie zawierał tekst Powszechnej Deklaracji Praw Człowieka we wszystkich dostępnych językach pisanych. Będzie on służył zarówno jako narzędzie do tłumaczenia, jak i jako przykład ASCII i UTF-8.
+
+## Rodzaje plików
+
+Istnieje wiele różnych rodzajów plików tekstowych, tworzonych z różnych powodów. Podstawowym rodzajem, dla którego istnieje to archiwum, jest kod źródłowy. Kod źródłowy jest bardzo gęstym, niezwykle uporządkowanym tekstem, w którym symbole takie jak '{' i ';' mają ogromne znaczenie.
+
+Kluczową rzeczą w kodzie źródłowym jest to, że jest on napisany tak, by mógł być czytany przez kompilatory. Ponieważ kompilatory są oprogramowaniem, innym sposobem wyrażenia tego jest to, że kod źródłowy jest pisany po to, by był czytany przez komputery. Dobry kod jest również napisany tak, że inni ludzie, jeśli są wykwalifikowani i wykształceni w dziedzinie oprogramowania, mogą go zrozumieć; ale jest on poprawny tylko wtedy, gdy może go zrozumieć kompilator.
+
+Kompilator ten z kolei, poprzez skomplikowane sekwencje opisane w drzewie technologicznym, przekształci kod źródłowy w sekwencje jedynek i zer, które spowodują, że komputer będzie wykonywał funkcje i czynności opisane w kodzie. Weźmy bardzo prosty przykład, linia kodu
+
+    for (int i=0; i<5; i++) { }
+
+zostanie przekształcona przez kompilator w serię instrukcji binarnych podawanych komputerowi, które spowodują, że niewielka część komputera, zwana rejestrem procesora, ustawi swoją wartość na 0, a następnie zwiększy tę wartość do 1, 2, 3, a potem 4. (Nie jest to przykład użytecznego kodu; jest to tylko zobrazowanie złożonego procesu przekształcania kodu źródłowego w działające oprogramowanie).
+
+Inne rodzaje plików tekstowych, takie jak JSON, XML i HTML, są używane do przechowywania danych (w przeciwieństwie do poleceń) dla komputerów. Są one zazwyczaj również czytelne dla ludzi, chociaż ich ustrukturyzowane formaty sprawiają, że są trudniejsze do odczytania niż mniej ustrukturyzowany tekst opowiadający historię, taki jak ten plik.
+
+Większość innych rodzajów plików tekstowych jest przeznaczona do ostatecznego odczytania przez człowieka. Niektóre z nich są prostym, najczęściej nieuporządkowanym tekstem, jak ten plik, który właśnie czytasz. Jednym z rodzajów plików, które można spotkać w archiwum, jest Markdown, oznaczany rozszerzeniem .md, który jest rodzajem formy pośredniej, przeznaczonej do odczytu przez ludzi w surowej postaci, a jednocześnie ustrukturyzowanej tak, by komputery mogły je sformatować w bardziej atrakcyjne wizualnie i użyteczne układy. Większość repozytoriów w tym archiwum posiada plik README.md w formacie Markdown, który ma być wstępem do repozytorium, opisującym czym jest, dlaczego istnieje i jak z niego korzystać.
+
+Przydatny może być również krótki przegląd najbardziej powszechnych form plików nietekstowych. Skompilowany kod jest nietekstem. Pliki JPG i PNG kodują obrazy w formacie cyfrowym, a MP3 i WAV kodują dźwięk. Pliki PDF kodują dokumenty z precyzyjnym, doskonałym formatowaniem. A pliki ZIP i TAR, jak już wcześniej wspomniano, są kontenerami, które z kolei mogą zawierać jeden lub wiele innych plików.
+
+## Języki ludzkie i języki programowania
+
+### Języki ludzkie
+
+Istnieją tysiące języków pisanych używanych obecnie przez ludzkość i jeszcze więcej języków mówionych. Większość z nich jest używana tylko przez stosunkowo niewielkie populacje, ale istnieje co najmniej dwadzieścia języków używanych jako pierwszy lub drugi język przez co najmniej 60 milionów ludzi.
+
+Najpowszechniej używanymi językami na świecie są angielski i chiński. Z powodów historycznych, przez wiele lat większość rozwoju oprogramowania miała miejsce w krajach anglojęzycznych, więc przez pewien czas angielski stał się domyślnym językiem oprogramowania. Większość języków programowania używa w swojej składni angielskich słów. Jest to język, w którym po raz pierwszy napisano ten przewodnik po archiwum.
+
+Nie ma gwarancji, że spadkobiercy tego archiwum będą znali angielski, choć wydaje się, że jest to szczególnie prawdopodobny język, który przetrwa w nieskończoność. Na wypadek, gdyby przydały się wskazówki dotyczące innych języków, dołączamy ponad 500 dostępnych tłumaczeń Powszechnej Deklaracji Praw Człowieka w postaci nieskompresowanego pliku UTF-8 na początku każdego zwoju, a także w drzewie technologicznym. Deklaracja ta jest listą praw i wolności każdego człowieka naszej ery, które nigdy nie mogą zostać odebrane.
+
+### Języki programowania
+
+Języki programowania to języki używane przez ludzi do przekazywania instrukcji komputerom. Są to języki, w których wyrażane jest oprogramowanie. Inni (przeszkoleni) ludzie powinni również być w stanie czytać oprogramowanie napisane w językach programowania, ale to jest drugorzędny cel.
+
+Język programowania jest zbiorem predefiniowanych elementów, z których większość stanowią słowa, które mogą być ułożone w uporządkowany sposób w celu poinstruowania komputera, aby wykonał określoną czynność w określony sposób. Zbiór takich instrukcji znany jest jako program lub kod źródłowy. Kod źródłowy to zasadniczo oprogramowanie w utrwalonej, pisemnej formie.
+
+Programy są zazwyczaj podzielone na poszczególne kroki, znane jako instrukcje, które z kolei są pogrupowane w zbiory znane jako funkcje. Cały program może być zawarty w jednym pliku, lub może być rozłożony na tysiące.
+
+Istnieją setki różnych języków programowania, rozproszonych w wielu różnych formach, podejściach i filozofiach. Niektóre z nich są kompilowane do oddzielnych plików binarnych, które są następnie wykonywane; niektóre, znane jako języki „interpretowane”, są efektywnie kompilowane i uruchamiane za jednym razem, bez żadnego etapu pośredniego. Większość nowoczesnych języków programowania zawiera biblioteki wstępnie napisanych funkcji, a biblioteki te mogą być bardzo obszerne i rozbudowane. Niektóre z najpopularniejszych obecnie języków programowania obejmują:
+
+* C, jeden z najstarszych i najszybszych, najbardziej uniwersalnych i najpotężniejszych języków, prosty w niektórych aspektach, ale dość ograniczony w innych, i nie zawsze intuicyjny, łatwy do odczytania lub łatwy do nauczenia.
+
+* C++, bardziej złożone, abstrakcyjne i potężniejsze rozwinięcie języka C.
+
+* C#, dalsze rozwinięcie kompilacji nie do binarnego kodu maszynowego, ale interpretowanego „runtime”.
+
+* Java, która jest podobna do (ale poprzedzająca) C#, jest prawdopodobnie najczęściej używanym obecnie językiem.
+
+* JavaScript, w odróżnieniu od Javy, mimo podobieństwa w nazwie, znany również jako "ECMAScript", jest językiem początkowo używanym wyłącznie w przeglądarce internetowej, tj. programie, który pobierał, interpretował i wyświetlał dane ze zdalnego komputera zwanego serwerem internetowym; obecnie jest jednak powszechnie używany również na tych serwerach.
+
+* TypeScript, forma JavaScriptu z bardziej rygorystycznymi zasadami, dzięki którym błędy, znane również jako bugi, mają mniejsze szanse na przedostanie się do programów.
+
+* Python, elegancki język popularny wśród naukowców, zarówno potężny, jak i dobry jako pierwszy język.
+
+* Ruby, intuicyjny język, którego składnię często czyta się prawie jak pisany angielski.
+
+* Go, prosty, potężny język, który szczególnie dobrze radzi sobie z programami paralelizowanymi, tzn. programami napisanymi tak, aby wiele funkcji działało niezależnie w tym samym czasie.
+
+* Swift, nowy język używany do pisania aplikacji na telefony i innych urządzeń używanych przez miliard ludzi.
+
+* Rust, przeznaczony jako zamiennik dla C, taki, w którym prawdopodobieństwo wystąpienia niebezpiecznych błędów jest znacznie mniejsze.
+
+* PHP, prosty język używany do obsługi serwerów internetowych.
+
+* Lisp, bardzo stary język z fundamentalnie odmiennym, funkcyjnym podejściem do programowania.
+
+* SQL, bardzo różny rodzaj języka używany do pobierania danych z ustrukturyzowanych i wysoce wydajnych magazynów danych znanych jako bazy danych.
+
+* Assembler (lub assembly), bardzo enigmatyczna, ograniczona, ale szybka i potężna rodzina języków, w której istnieje bezpośredni związek między konstrukcjami językowymi a kodem maszynowym danego komputera; może być uważany za kod w połowie skompilowany.
