@@ -57,3 +57,127 @@ Wreszcie, każdy plik składowy jest własnym zestawem danych binarnych, czyli j
 Ten proces archiwizacji danych, pliki binarne pakowane do plików archiwalnych, które zostały najpierw skompresowane, a następnie zakodowane w QR, jest oczywiście skomplikowany w porównaniu z prostym zapisem tekstu czytelnego dla człowieka. Proces odarchiwizowania danych, przez który trzeba będzie przejść – od QR do skompresowanych plików binarnych; skompresowane do nieskompresowanych; plik archiwalny do wielu plików; pliki tekstowe do tekstu czytelnego dla człowieka - jest podobnie złożony. Dzieje się tak dlatego, że ta złożoność pozwala nam przechowywać znacznie więcej danych, niż byłoby to możliwe w innym przypadku, w sposób stosunkowo łatwy do odczytania przez komputer.
 
 Jeśli ta złożoność jest dla Was trudna i kosztowna, przepraszamy, ale przypuszczamy, że w takim przypadku niniejszy przewodnik i czytelne dla człowieka drzewo technologiczne złagodzą tę złożoność i być może będą dla Was bardziej użyteczne niż zawartość archiwum, przynajmniej do czasu, gdy wasze komputery będą na tyle zaawansowane, że łatwo będzie poradzić sobie ze złożonością danych zawartych w archiwum.
+
+## Pliki, katalogi, repozytoria i formaty danych
+
+Przydatne może być omówienie, w jaki sposób archiwum jest logicznie podzielone. W szczególności pomocna może być dyskusja na temat plików, katalogów i formatów danych.
+
+Plik jest zbiorem danych zgrupowanych w spójną całość o jednej nazwie: pomyśl o danych jak o piasku, a o pliku jak o pewnego rodzaju worku, który może pomieścić piasek i tylko piasek. Katalog jest zbiorem plików: pomyśl o nim jako o rodzaju worka, który może pomieścić tylko inne worki. Podążając za tą metaforą, każde repozytorium składa się z katalogu zewnętrznego, zwanego katalogiem głównym, który zawiera pewną liczbę plików i/lub pewną liczbę katalogów. Każdy katalog może z kolei zawierać zarówno pliki, jak i same katalogi.
+
+Struktura ta jest korzystna, ponieważ pliki zorganizowane w grupy są znacznie łatwiejsze do pracy niż pojedynczy zbiór plików. Identyfikator konkretnego pliku w katalogu zewnętrznym składa się z nazw wszystkich katalogów składowych, poczynając od głównego, po czym następuje jego indywidualna nazwa, ze znakiem / pomiędzy każdą nazwą. Na przykład, plik o nazwie README.md w katalogu głównym będzie identyfikowany jako /README.md, a plik identyfikowany jako /public/www/index.html będzie plikiem index.html w katalogu 'www' wewnątrz katalogu 'public' wewnątrz katalogu głównego.
+
+Każde repozytorium z kolei ma dwie nazwy, oddzielone separatorem, którym w archiwum jest _ lub podkreślnik. (Historycznie był to znak / lub ukośnik, ale jest on również używany do wskazywania katalogu, więc używamy _ dla jasności). Pierwsza nazwa to konto na GitHubie, które jest właścicielem tego repozytorium; druga to nazwa indywidualnego repozytorium. Kombinacja identyfikatorów repozytorium i pliku może być użyta do jednoznacznej identyfikacji pojedynczego pliku w archiwum. Na przykład plik 'package.json' w katalogu 'web' w repozytorium 'ykarma' w ramach konta GitHub 'rezendi' może być jednoznacznie zidentyfikowany jako /web/package.json w rezendi_ykarma w archiwum.
+
+Różne rodzaje plików mają różne przeznaczenie. Archiwum GitHuba składa się w dużej mierze z plików tekstowych, czyli plików, których dane mają reprezentować język pisany. Większość oprogramowania jest pisana w plikach tekstowych zawierających wysoce ustrukturyzowany tekst zwany kodem źródłowym. Specjalny program znany jako kompilator przekształca ten czytelny dla człowieka kod źródłowy w czytelne dla komputera instrukcje znane jako kod skompilowany lub kod maszynowy.
+
+Pliki, które nie są plikami tekstowymi, takie jak pliki, które reprezentują obrazy wizualne lub zawierają skompilowany kod, są często określane jako pliki binarne. Jest to niestety mylące określenie, ponieważ pliki tekstowe to w końcu także zera i jedynki. Pliki, które nie są plikami tekstowymi będziemy określać jako pliki nietekstowe.
+
+Istnieje wiele sposobów reprezentowania języka pisanego przez człowieka za pomocą zer i jedynek. Z powodów historycznych, większość kodu źródłowego była pierwotnie napisana w tak zwanym alfabecie łacińskim. Alfabet łaciński ma 26 podstawowych znaków, które są używane do reprezentowania słów, z których każdy ma dwie formy, wielką i małą literę. Posiada również 10 cyfr do reprezentowania liczb. Alfabet łaciński, wraz z różnymi innymi symbolami używanymi do oznaczania struktury i innych pojęć, jest kodowany jako 1 i 0 w formacie znanym jako „ASCII”, który może reprezentować 128 różnych znaków i z powodów historycznych był dominujący w większości oprogramowania przez wiele lat.
+
+Jednakże, alfabet łaciński jest tylko niewielkim podzbiorem wielu sposobów, w jakie ludzie wyrażają siebie w języku pisanym. Aby obsługiwać inne alfabety, a jednocześnie umożliwić wszystkim programom, które zostały napisane z myślą o używaniu ASCII, kontynuowanie pracy bez zmian (koncepcja znana jako kompatybilność wsteczna), wprowadzono inny format danych znany jako „UTF-8”.
+
+ASCII pozostaje najbardziej rozpowszechnionym formatem kodu źródłowego. Każda szpula tego archiwum zawiera przewodnik po znakach ASCII. ASCII jest podzbiorem UTF-8, co oznacza, że wszystkie kodowania ASCII są również kodowaniami UTF-8. Szpula przewodnika zawiera dodatkowo specyfikację wszystkich znaków UTF-8. Prawie wszystkie pliki tekstowe w tym archiwum powinny być zakodowane jako UTF-8.
+
+Pliki nietekstowe obejmują pliki przeznaczone do reprezentowania obrazów i sformatowanych dokumentów. Powszechnie stosowaną konwencją jest to, że nazwy plików kończą się znakiem „.”, po którym następuje przyrostek wskazujący typ pliku. Na przykład, nazwa pliku kończąca się na .jpg jest prawdopodobnie plikiem obrazu JPEG; nazwa kończąca się na .PNG jest prawdopodobnie plikiem obrazu Portable Network Graphic; a nazwa kończąca się na .pdf jest plikiem Portable Document Format.
+
+Nie ma jednego sufiksu, który wskazuje na pliki tekstowe. W przypadku kodu źródłowego, przyrostek wskazuje raczej na język programowania lub język znaczników, w którym kod został napisany. Języki programowania i znaczników zostaną opisane bardziej szczegółowo poniżej.
+
+## Jak rozpakować zawartość archiwum
+
+W tym miejscu przedstawimy, jak rozpakować dane zarchiwizowane repozytorium do jego poszczególnych plików składowych. Ponownie, proces ten składa się z:
+
+1. Określenia konkretnej szpuli i klatek, na których zarchiwizowane są dane repozytorium.
+
+2. Dekodowania z kodów QR, pól czarnych, białych i szarych pikseli na tych klatkach, do pliku binarnego, czyli ciągu (co najmniej tysięcy, a często milionów) zer i jedynek.
+
+3. Rozpakowania pliku binarnego do dłuższego, nieskompresowanego pliku archiwum.
+
+4. Rozpakowania pliku archiwum do osobnych podplików, które zawiera. Należy jednak pamiętać, że dane archiwalne są na ogół zrozumiałe, choć nieprzejrzyste, nawet jeśli ten krok zostanie pominięty.
+
+5. Wreszcie, konwersji każdego z tych podplików - samych sekwencji 1 i 0, które mogą być zarówno dość krótkie jak i bardzo długie - na znaki pisane, jeśli są to pliki tekstowe.
+
+### Określenie konkretnej szpuli i klatek, na których zarchiwizowane są dane repozytorium
+
+Każda szpula filmowa zaczyna się od pustej klatki, a następnie od referencyjnej klatki zerowej, która składa się z czarnego prostokąta w jednym rogu klatki. Następną klatką jest czytelna dla człowieka klatka kontrolna, zawierająca informacje o szpuli. Następnie znajduje się spis treści, który z kolei zawiera listę plików danych użytkownika.
+
+Każde repozytorium na tej szpuli jest jednym z tych plików danych użytkownika. Lista zawiera unikalny identyfikator, identyfikator pliku i nazwę dla każdego z tych plików. Na przykład, repozytorium CPython konta Python może mieć identyfikator pliku 12345, a nazwę python_cpython.tar.
+
+Po liście plików danych użytkownika znajduje się lista lokalizacji danych cyfrowych. Lista ta zawiera identyfikator pliku, klatkę początkową, bajt początkowy, klatkę końcową i bajt końcowy. Tak więc, używając hipotetycznego przykładu CPython, element na tej liście o identyfikatorze 12345 może mieć ramkę początkową 054321, bajt początkowy 03210321, ramkę końcową 054545 i bajt końcowy 12321232.
+
+Oznacza to, że aby uzyskać dane CPython: Przejdź do klatki 54321 tej szpuli filmu. Zdekoduj wszystkie klatki od początkowej, 54321, do końcowej, 54545, na wartości binarne, w sposób opisany poniżej. W ten sposób otrzymasz 225 fragmentów danych ponumerowanych od 54321 do 54545, które rozpoczną się od zestawu pustych fragmentów bez danych. Odrzuć pierwsze 3210320 bajtów w pierwszym niepustym kawałku danych. Dołącz wszystkie "środkowe" fragmenty danych, w kolejności. Na koniec dołącz pierwsze 12321232 bajty z ostatniego fragmentu danych, 54545. Teraz masz zebrane kompletne repozytorium CPython, jako pojedynczy skompresowany plik archiwum.
+
+### Dekodowanie kodów QR do pliku binarnego
+
+Szczegóły dotyczące sposobu dekodowania klatek filmu na dane binarne znajdują się w czytelnej dla człowieka informacji o reprezentacji, która znajduje się po spisie treści na początku każdej szpuli filmu w archiwum. Informacje te znajdują się na każdej szpuli, tak że nawet jeśli pojedyncza szpula zostanie odłączona od archiwum, nadal będzie można odszyfrować jej zawartość. Informacja o reprezentacji zawiera w kolejności:
+
+1. Przewodnik po programie archiwum GitHub (ten dokument)
+
+2. Indeks opisowy GitHuba, lista i krótki opis wszystkich repozytoriów na tej szpuli
+
+3. Opis informacji o reprezentacji
+
+4. Ochrona zasobów cyfrowych i sposoby pozyskiwania danych, przegląd szczegółów dotyczących pozyskiwania danych
+
+5. Opis nośnika pamięci
+
+6. Technologia odzyskiwania danych
+
+7. Ogólne utrzymanie struktury szpuli (format szpuli)
+
+8. Ogólny opis formatu klatki 4K
+
+9. Opis rozpakowywania biblioteki (dla kodów QR)
+
+10. Rozpakowywanie kodu źródłowego biblioteki
+
+11. Specyfikacja formatu danych ASCII
+
+12. Specyfikacja języka programowania C
+
+13. Kod źródłowy pliku archiwum TAR
+
+14. Kod źródłowy PDF
+
+15. Specyfikacja formatu pliku XZ (dla kompresji / dekompresji, opisana poniżej)
+
+Szósta z tych pozycji, dokument technologii odzyskiwania danych, opisuje wymagania i procesy wykorzystania skanera do przechwycenia danych zawartych w pojedynczej cyfrowo zakodowanej klatce filmu i przekształcenia ich w formę nadającą się do analizy komputerowej. Ósma z tych pozycji, opis formatu klatki 4K, zawiera informacje techniczne, w tym kod źródłowy, wymagane do tego, aby komputer mógł pobrać taki zeskanowany obraz i przekształcić go w dane binarne.
+
+Teoretycznie jest to możliwe, aby przekonwertować repozytorium z danych zakodowanych w QR na dane binarne bez użycia komputera. Byłoby to jednak niezwykle trudne i prawdopodobnie wymagałoby znacznego wysiłku ze strony dobrze zorganizowanej społeczności przez wiele tygodni, jeśli nie miesięcy lub lat. Ponieważ zawartość repozytoriów to oprogramowanie przeznaczone do pracy na komputerze, ich wykorzystanie bez komputera byłoby, w najlepszym wypadku, minimalne.
+
+W przypadku, gdyby spadkobiercy tego archiwum nie będą posiadali komputerów, powinni przechowywać archiwum w całości i bezpiecznie do czasu, aż je zdobędą. Jednym z celów Drzewa Technologii, które można odczytać przez człowieka, jest pomoc w przyspieszeniu rozwoju technologii i komputerów na wypadek takiej ewentualności. (Jego innym celem jest skodyfikowanie naszej technologii i jej rozwoju dla przyszłych historyków).
+
+### Rozpakowanie pliku archiwum do poszczególnych podplików, które zawiera
+
+Plik binarny dla każdego repozytorium jest w formacie znanym jako TAR, czyli Tape Archive. Plik TAR jest zasadniczo tworzony poprzez grupowanie pewnej liczby plików razem poprzez łączenie końca jednego z początkiem następnego, tak jak sklejanie pojedynczych kartek papieru w jeden zwój. Plik TAR może zawierać dowolną liczbę plików, o dowolnym rozmiarze, podzielonych na dowolną liczbę katalogów i podkatalogów.
+
+Każdy podplik w pliku TAR jest poprzedzony 512-bajtowym rekordem nagłówkowym, który działa jak taśma w metaforze zwoju. Ten rekord nagłówkowy zawiera informacje o pliku, takie jak jego nazwa i rozmiar. Koniec archiwum jest wskazywany przez co najmniej dwa kolejne 512-bajtowe bloki.
+
+Ponieważ pliki TAR są w zasadzie tylko zbiorami plików z rekordami tekstowymi pomiędzy nimi, jeżeli plik TAR zawiera wszystkie pliki tekstowe, może być traktowany jako plik tekstowy. Jeżeli zawiera on mieszaninę, może być traktowany jako plik tekstowy, który zawiera mieszaninę uporządkowanego, znaczącego tekstu (składowe pliki tekstowe) i niezrozumiałego bełkotu (składowe pliki nietekstowe).
+
+Możliwe jest zagnieżdżanie plików TAR w plikach TAR, jeden kontener w drugim, i w ten sposób przechowywana jest większość naszych zarchiwizowanych danych. Dla danego repozytorium, zewnętrzny plik TAR będzie zawierał co najmniej:
+
+* pojedynczy, nieskompresowany plik metadanych o nazwie META, który zawiera nazwę repozytorium, nazwę konta, opis, język, liczbę gwiazdek i liczbę forków.
+* skompresowany (patrz poniżej) plik o nazwie COMMITS, który zawiera log zmian dokonanych w repozytorium w czasie
+* plik o nazwie repo.tar.xz, skompresowany plik TAR, który zawiera rzeczywistą zawartość repozytorium.
+
+Inne metadane, takie jak wiki, gh-pages, issues i pull requests, mogą być również dołączone jako oddzielne skompresowane pliki.
+
+Szczegółowe informacje o plikach TAR oraz oprogramowaniu do ich kodowania i dekodowania można znaleźć w informacjach o reprezentacji w każdej szpuli archiwum.
+
+### Rozpakowywanie skompresowanych plików do czytelnych, nieskompresowanych plików
+
+W celu włączenia jak największej liczby repozytoriów i jak największej ilości danych, większość danych została skompresowana. Kompresja oznacza użycie małej ilości danych do reprezentowania większej ilości, poprzez użycie wzorców i powtórzeń w tej większej ilości. Na przykład, zamiast pisać znak a dziewięć razy z rzędu, można po prostu napisać skompresowany tekst 9a, jeśli jest się pewnym, że czytelnik zrozumie, że 9a oznacza nieskompresowany tekst aaaaaaaaa.
+
+Efektywne algorytmy kompresji są o wiele bardziej złożone, ale obowiązuje ta sama zasada. Niniejsze archiwum wykorzystuje program kompresujący znany jako „XZ”, który z kolei wykorzystuje algorytm znany jako „LZMA”. Drugi plik danych w każdej szpuli zawiera kod źródłowy i dokumentację do programu XZ w pojedynczym nieskompresowanym pliku archiwum TAR, opisanym poniżej. (Pierwszy plik danych zawiera Powszechną Deklarację Praw Człowieka we wszystkich dostępnych językach pisanych).
+
+LZMA łączy w sobie tak zwany algorytm „LZ77” i „kodowanie zakresowe”. LZ77 zastępuje powtarzające się dane odniesieniami do poprzednich wystąpień tych danych. Na przykład, w dużym uproszczeniu, jeśli 80-bajtowa fraza pojawia się dwa razy, w odstępie 400 bajtów, za drugim razem algorytm zasadniczo zagęszcza dane mówiąc „powtórz 80 bajtów sprzed 400 bajtów”. Kodowanie zakresowe zasadniczo przekształca całą wiadomość w pojedynczą bardzo długą liczbę, która z kolei może być zakodowana.
+
+Konkretne kroki algorytmu, który ma być użyty do dekompresji danych, są opisane w kodzie źródłowym XZ zawartym w drugim pliku danych w każdej szpuli. Choć teoretycznie możliwe jest ręczne zdekompresowanie danych, byłby to proces niezwykle czaso- i pracochłonny. W praktyce przydałby się działający komputer.
+
+### Konwersja każdego pojedynczego pliku na znaki pisane
+
+Przez tysiąclecia ludzkość używała wielu znaków pisanych. Kodowanie używane do reprezentowania tych znaków jako 1 i 0 w tym archiwum jest znane jako „UTF-8”. Pojedynczy znak UTF-8, tj. pojedynczy symbol pisany, może zajmować od 1 do 4 bajtów danych binarnych.
+
+Z powodów historycznych, ponieważ były one najpowszechniej używane w czasach i regionach, w których i kiedy zaczęto tworzyć oprogramowanie, grupa znaków (i pojęć) znana jako „ASCII” jest kodowana najbardziej efektywnie, po 1 bajcie na znak. Wszystko, co nie jest ASCII, jest kodowane jako 2 lub więcej bajtów na znak. Większość plików tekstowych w tym archiwum jest ASCII, ale znaczna ich liczba nie jest. Wiele innych będzie w większości ASCII z okazjonalnymi znakami spoza ASCII.
+
+Szczegółowa specyfikacja ASCII znajduje się w informacji o reprezentacji w każdej szpuli archiwum. Szczegółowa specyfikacja UTF-8 znajduje się na szpuli z przewodnikiem. Pierwszy plik danych na każdej szpuli archiwum będzie zawierał tekst Powszechnej Deklaracji Praw Człowieka we wszystkich dostępnych językach pisanych. Będzie on służył zarówno jako narzędzie do tłumaczenia, jak i jako przykład ASCII i UTF-8.
