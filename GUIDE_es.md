@@ -249,6 +249,7 @@ Existen cientos de lenguajes de programación diferentes, con muchas formas, enf
 -   SQL, un tipo de lenguaje muy diferente empleado para obtener datos de almacenes de datos estructurados y muy eficientes conocidos como bases de datos.
 
 -   Ensamblador (o assembly), una familia de lenguajes muy crípticos, limitados, pero rápidos y potentes, en los que existe una relación directa entre las construcciones del lenguaje y el código máquina del ordenador en cuestión; puede considerarse código semicompilado.
+-   Dart, se diseñó con el objetivo de hacer el proceso de desarrollo lo más cómodo y rápido posible para los desarrolladores. Por eso, viene con un conjunto bastante extenso de herramientas integrado, como su propio gestor de paquetes, varios compiladores/transpiladores, un analizador y formateador. Además, la máquina virtual de Dart y la compilación Just-in-Time hacen que los cambios realizados en el código se puedan ejecutar inmediatamente.
 
 ## Desarrollo, dependencias y código abierto
 
