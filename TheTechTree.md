@@ -112,6 +112,8 @@ _Introducing Python_ by Bill Lubanovic (O&#39;Reilly)
 
 _Comprehensive Ruby Programming_ by Jordan Hudgens (Packt)
 
+_Structure and Interpretation of Computer Programs_ by Harold Abelson, Gerald Jay Sussman, Julie Sussman (MIT Press)
+
 _LISP, Lore, and Logic_ by W. Richard Stark (Springer)
 
 _The C Programming Language_ by Kernighan and Ritchie (Pearson)
