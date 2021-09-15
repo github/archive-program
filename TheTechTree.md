@@ -136,6 +136,8 @@ _Learning Java_ by Patrick Niemeyer and Daniel Leuck (O&#39;Reilly)
 
 _The Java Virtual Machine Specification_ by Tim Lindholm, Frank Yellin, Gilad Bracha, and Alex Buckley (Pearson)
 
+_Eloquent JavaScript_ by Marijn Haverbeke (No Starch Press)
+
 _JavaScript: The Definitive Guide_ by David Flanagan (O&#39;Reilly)
 
 _JavaScript: The Good Parts_ by Douglas Crockford (O&#39;Reilly)
