@@ -190,7 +190,7 @@ Hal utama tentang kode sumber adalah bahwa ia ditulis untuk dibaca oleh kompiler
 
 Kompiler tersebut akan, pada gilirannya, melalui urutan rumit yang dijelaskan di Tech Tree, mengubah kode sumber menjadi urutan satu dan nol yang akan menyebabkan komputer menjalankan fungsi dan aktivitas yang dijelaskan oleh kode. Untuk mengambil contoh yang sangat sederhana, baris kode
 
-    _untuk (int i = 0; i <5; i ++) {} _
+    _for (int i=0; i<5; i++) { }_
 
 akan diubah oleh kompiler menjadi serangkaian instruksi biner yang diumpankan ke komputer, yang akan menyebabkan sebagian kecil dari komputer, yang disebut register, menyetel nilainya menjadi 0, dan kemudian menaikkan nilainya menjadi 1, 2, 3, lalu 4. (Ini tidak dimaksudkan sebagai contoh kode yang berguna; ini hanya ilustrasi dari proses berlapis-lapis untuk mengubah kode sumber menjadi perangkat lunak yang berjalan.)
 
