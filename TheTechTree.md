@@ -146,6 +146,8 @@ _Learning Swift_ by Jonathon Manning, Paris Buttfield-Addison, and Tim Nugent (O
 
 _Introducing Erlang_ by Simon St. Laurent (O&#39;Reilly)
 
+_Programming Erlang: Software for a Concurrent World_ by Joe Armstrong (Pragmatic Bookshelf)
+
 _Clojure Programming_ by Chas Emerick, Brian Carper, and Christophe Grand (O&#39;Reilly)
 
 ## Networking and connectivity
