@@ -279,6 +279,8 @@ _RISC-V Specifications_ by the RISC-V International Technical Committee
 
 _Learning FPGAs_ by Justin Rajewski (O&#39;Reilly)
 
+_Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes: 1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4_ (Intel)
+
 ## Hardware development
 
 _Digital Computer Electronics_ by Albert P. Malvino and Jerald A Brown (Career Education)
