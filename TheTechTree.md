@@ -87,6 +87,10 @@ _Mastering Linux Kernel Development_ by Raghu Bharadwaj (Packt)
 
 _The Linux Programming Interface_ by Michael Kerrick (No Starch)
 
+_Windows Internals, Seventh Edition_, Parts 1 and 2, by Pavel Yosifovich, Alex Ionescu, Mark E. Russinovich, and David A. Solomon (Microsoft)
+
+_The Old New Thing: Practical Development Throughout the Evolution of Windows_ by Raymond Chen (Addison-Wesley)
+
 ## Programming languages
 
 There are hundreds of programming languages; the enormous chart visualizing their evolution at the Computer History Museum is worth visiting if you&#39;re a developer, and we don&#39;t intend to document them all. Still, accessible book-length descriptions of a selection of the world&#39;s major languages seems desirable.
