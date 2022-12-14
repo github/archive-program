@@ -236,7 +236,7 @@ Es gibt Hunderte verschiedener Programmiersprachen, die auf viele verschiedene F
 
 * Swift, eine neue Sprache, die zum Schreiben für Telefone und andere Geräte verwendet wird, die von einer Milliarde Menschen verwendet werden.
 
-* Rost, der als Ersatz für C gedacht ist und gefährliche Fehler weitaus weniger wahrscheinlich macht.
+* Rust, die als Ersatz für C gedacht ist und gefährliche Fehler weitaus weniger wahrscheinlich macht.
 
 * PHP, eine einfache Sprache für Internet-Server.
 
